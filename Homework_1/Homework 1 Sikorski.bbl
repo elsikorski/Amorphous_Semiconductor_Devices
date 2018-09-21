@@ -1,0 +1,120 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Anderson1975}
+P.~W. Anderson,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.34.953}{{Model for
+  the Electronic Structure of Amorphous Semiconductors}}, Physical Review
+  Letters 34~(15) (1975) 953--955.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.34.953}
+
+\bibitem{Street1975}
+R.~A. Street, N.~F. Mott,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}{{States
+  in the Gap in Glassy Semiconductors}}, Physical Review Letters 35~(19) (1975)
+  1293--1295.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}
+
+\bibitem{Mott1987}
+S.~N. Mott,
+  \href{https://global.oup.com/academic/product/conduction-in-non-crystalline-materials-9780198539797?lang=en{\&}cc=lu}{{Conduction
+  in non-crystalline materials}}, Oxford University Press, 1987.
+\newline\urlprefix\url{https://global.oup.com/academic/product/conduction-in-non-crystalline-materials-9780198539797?lang=en{\&}cc=lu}
+
+\bibitem{Zallen1983}
+R.~Zallen (Ed.), \href{http://doi.wiley.com/10.1002/9783527617968}{{The Physics
+  of Amorphous Solids}}, John Wiley {\&} Sons, Inc., Weinheim, Germany, 1983.
+\newblock \href {http://dx.doi.org/10.1002/9783527617968}
+  {\path{doi:10.1002/9783527617968}}.
+\newline\urlprefix\url{http://doi.wiley.com/10.1002/9783527617968}
+
+\bibitem{Street1983}
+R.~A. Street, J.~Zesch, M.~J. Thompson,
+  \href{http://aip.scitation.org/doi/10.1063/1.94441}{{Effects of doping on
+  transport and deep trapping in hydrogenated amorphous silicon}}, Applied
+  Physics Letters 43~(672) (1983) 672--674.
+\newblock \href {http://dx.doi.org/10.1063/1.94441}
+  {\path{doi:10.1063/1.94441}}.
+\newline\urlprefix\url{http://aip.scitation.org/doi/10.1063/1.94441}
+
+\bibitem{Kittel1996}
+C.~Kittel,
+  \href{https://www.wiley.com/en-au/Kittel{\%}27s+Introduction+to+Solid+State+Physics+Global+Edition-p-9781119454168}{{Introduction
+  to solid state physics}}, 1996.
+\newline\urlprefix\url{https://www.wiley.com/en-au/Kittel{\%}27s+Introduction+to+Solid+State+Physics+Global+Edition-p-9781119454168}
+
+\bibitem{Kolobov1996}
+A.~V. Kolobov, {On the origin of p-type conductivity in amorphous
+  chalcogenides}, Journal of Non-Crystalline Solids (1996) 728--731.
+
+\bibitem{Tauc1976}
+J.~Tauc, \href{http://physicstoday.scitation.org/toc/pto/29/10}{{Amorphous
+  semiconductors}}, Physics Today 29 (1976) 23--31.
+\newblock \href {http://dx.doi.org/10.1063/1.3024406}
+  {\path{doi:10.1063/1.3024406}}.
+\newline\urlprefix\url{http://physicstoday.scitation.org/toc/pto/29/10}
+
+\bibitem{Tsendin2001}
+K.~D. Tsendin, {Physical properties of doped chalcogenide glassy semiconductors
+  which are governed by the interaction of negative-U defects and impurity
+  states}, Journal of Optoelectronics and Advanced Materials 3~(2) (2001)
+  215--220.
+
+\bibitem{Kastner1972}
+M.~Kastner, \href{https://link.aps.org/doi/10.1103/PhysRevLett.28.355}{{Bonding
+  Bands, Lone-Pair Bands, and Impurity States in Chalcogenide Semiconductors}},
+  Physical Review Letters 28~(6) (1972) 355--357.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.28.355}
+  {\path{doi:10.1103/PhysRevLett.28.355}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.28.355}
+
+\bibitem{Baker2006}
+D.~A. Baker, M.~A. Paesler, G.~Lucovsky, S.~C. Agarwal, P.~C. Taylor,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.96.255501}{{Application
+  of Bond Constraint Theory to the Switchable Optical Memory Material Ge 2 Sb 2
+  Te 5}}, Physical Review Letters 96~(255501).
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.96.255501}
+  {\path{doi:10.1103/PhysRevLett.96.255501}}.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.96.255501}
+
+\bibitem{Paesler2007}
+M.~A. Paesler, D.~A. Baker, G.~Lucovsky, A.~E. Edwards, P.~C. Taylor,
+  \href{www.elsevier.com/locate/jpcs}{{EXAFS study of local order in the
+  amorphous chalcogenide semiconductor Ge 2 Sb 2 Te 5}}, Journal of Physics and
+  Chemistry of Solids 68 (2007) 873--877.
+\newblock \href {http://dx.doi.org/10.1016/j.jpcs.2007.03.041}
+  {\path{doi:10.1016/j.jpcs.2007.03.041}}.
+\newline\urlprefix\url{www.elsevier.com/locate/jpcs}
+
+\bibitem{Ispas2001}
+S.~Ispas, M.~Benoit, P.~Jund, R.~Jullien,
+  \href{https://link.aps.org/doi/10.1103/PhysRevB.64.214206}{{Structural and
+  electronic properties of the sodium tetrasilicate glass Na 2 Si 4 O 9 from
+  classical and ab initio molecular dynamics simulations}}, Physical Review B
+  64~(21) (2001) 214206.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevB.64.214206}
+  {\path{doi:10.1103/PhysRevB.64.214206}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.64.214206}
+
+\bibitem{Chakraborty2017}
+S.~Chakraborty, P.~Boolchand, M.~Micoulaut,
+  \href{https://link.aps.org/doi/10.1103/PhysRevB.96.094205}{{Structural
+  properties of Ge-S amorphous networks in relationship with rigidity
+  transitions: An ab initio molecular dynamics study}}, Physical Review B
+  96~(9) (2017) 094205.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevB.96.094205}
+  {\path{doi:10.1103/PhysRevB.96.094205}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.96.094205}
+
+\bibitem{Zhang2014}
+W.~Zhang, I.~Ronneberger, P.~Zalden, M.~Xu, M.~Salinga, M.~Wuttig,
+  R.~Mazzarello, {How fragility makes phase-change data storage robust:
+  Insights from ab initio simulations}, Scientific Reports 4 (2014) 2--7.
+\newblock \href {http://dx.doi.org/10.1038/srep06529}
+  {\path{doi:10.1038/srep06529}}.
+
+\end{thebibliography}

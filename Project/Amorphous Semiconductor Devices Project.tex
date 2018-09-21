@@ -1,0 +1,86 @@
+\documentclass[3p,review,12pt]{elsarticle}
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\modulolinenumbers[5]
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\begin{document}
+
+\begin{frontmatter}
+	\title{Computational Methods for Amorphous Semiconductor Devices}
+	
+	\author[boise]{Ember L. Sikorski}
+	
+	
+	\address[boise]{Boise State University}
+	
+	\begin{abstract}
+\begin{itemize}
+	\item DOS
+	\item structural modeling
+\end{itemize}
+	\end{abstract}
+	
+	
+\end{frontmatter}
+
+\section{Introduction}
+
+\section{Density of States}
+\underline{Raty 2015 \cite{Raty2015}}
+\par
+\begin{itemize}
+	\item Motivation
+	\begin{itemize}
+		\item "Amorphous materials are out of thermodynamic equilibrium"
+		\item subject to physical aging
+		\item phase-change materials (PCMs) have a fast, reversible switch between a conductive crystalline and more resistive amorphous phase
+		\item aging increases the resistivity - `resistance drift'
+		\item computer simulation to investigate relaxation processes
+		\item \textbf{Modeling comment:} complexity of the chemistry requires DFT to describe and understand bonding and the amorphous phase
+	\end{itemize}
+	\item Literature
+	\begin{itemize}
+		\item DFT simulations of GeSbTe alloys report many tetrahedrally bonded Ge, which does not exist in crystal. These are obtained from MQ calcs
+	\end{itemize}
+	\item Methods
+	\begin{itemize}
+		\item Car-Parrinello
+		\item \textbf{To circumvent time scale problem, generated collection of a-structures}
+		\item mixed Gaussian/plane wave code in CP2K
+		\item cutoff 300 Ry
+		\item sampled at gamma only
+		\item annealed using plane-wave code in Quantum Espresso
+		\item 34 Ry
+		\item 3.84 fs
+		\item Berendsen thermostat
+		\item 10 models produced starting from liquid
+	\end{itemize}	
+ 	\item Results
+ 	\begin{itemize}
+ 		\item Ge$^{T}$ is associated with homopolar Ge-Ge bonds
+ 		\item heat of formaion shows homopolar bonds more favorable in GeTe than GeSe and SnTe
+ 		\item wanted to investigate effects of varying amounts Ge-Ge bonds
+ 		\item used different alloys along the phase diagram and substituted with Ge or Te to form different GeTe structures "mimicking aging"
+ 		\item homopolar bonds correlated with tetrahedral Ge
+ 		\item freezing at density of amorphous GeTe, tetrahedral rich models had the largest values of stress
+ 		\item this agrees with experiments showing the drift of PCMS is accompanied by stress relief
+ 		\item order parameter $d_{4}/d_{0}$ goes from tetrahedrally bonded Ge, $Ge^{T}$, to $Ge^{III}$ and $d_{3}/d_{0}$ goes from $Te^{II}$ to $Te^{III}$
+ 		\item increase in band gap directly linked to decrease in homopolar bonds
+ 		\item "melt-quenched model has a smaller band gap and possesses a (localized) mid-gap state"
+ 	\end{itemize}	
+\end{itemize}
+\section*{References}
+
+\bibliography{amorph}
+\bibliographystyle{elsarticle-num}
+
+\end{document}  

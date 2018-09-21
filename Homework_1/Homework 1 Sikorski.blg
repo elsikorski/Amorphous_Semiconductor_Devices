@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Homework 1 Sikorski.aux
+The style file: elsarticle-num.bst
+Database file #1: homework1.bib
+Warning--empty publisher in Kittel1996
+You've used 15 entries,
+            2937 wiz_defined-function locations,
+            801 strings with 8591 characters,
+and the built_in function-call counts, 4668 in all, are:
+= -- 464
+> -- 127
+< -- 0
++ -- 52
+- -- 37
+* -- 403
+:= -- 658
+add.period$ -- 24
+call.type$ -- 15
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 135
+empty$ -- 532
+format.name$ -- 44
+if$ -- 1190
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 17
+newline$ -- 74
+num.names$ -- 16
+pop$ -- 92
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 248
+stack$ -- 0
+substring$ -- 249
+swap$ -- 41
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 35
+width$ -- 17
+write$ -- 153
+(There was 1 warning)

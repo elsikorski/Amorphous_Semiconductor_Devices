@@ -1,0 +1,93 @@
+\documentclass[12pt]{elsarticle}
+
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+\newcommand{\bnumbers}{\begin{enumerate}}
+	\newcommand{\enumbers}{\end{enumerate}}
+\newcommand{\vs}{\vspace{2mm}}
+\newcommand{\beq}{\begin{equation*}}
+\newcommand{\eeq}{\end{equation*}}
+\newcommand{\rr}[1]{\mbox{#1}}
+\newcommand{\longequals}{{=\joinrel=}}
+\newcommand{\squared}{$^{2}$}
+\newcommand{\subtwo}{$_{2}$}
+%tables
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.75}
+
+
+
+\begin{document}
+\begin{flushright}
+	Ember Sikorski\par
+	Homework 2\par
+	ECE 624\par 
+	5 October 2018
+\end{flushright}
+
+
+\begin{enumerate}
+%1	
+\item Explain why electronic doping by introduction of suitable donor/acceptor levels in an amorphous material is difficult.
+\begin{itemize}
+	\item \cite{Tauc1976} concentration of defect states in the gap is higher than those introduced by doping
+	\item \cite{Kim2015}  Such low-coordination structure is so flexible 
+	\item \cite{Fritzsche2007} VAPS make chalc glasses immune to doping because the Fermi is pinned
+	\begin{itemize}
+		\item doping induces structural relaxation
+		\item free carriers that would be generated from dopants are now trapped
+		\item resistivity remains high (VAP)
+	\end{itemize}
+\end{itemize}
+
+%2
+\item Explain why the doping discussed in problem 1 might not improve carrier mobility. \par \vs
+\begin{itemize}
+	\item \cite{Kazakova1999} trapping at negative defect centers likely limits hole drift mobility
+\end{itemize}
+%3
+\item Would you expect to see blocking contacts in a metal-amorphous semiconductor contact? Explain your answer.
+
+%4
+\item Describe the structural order giving rise to extended (delocalized) states and localized states in an amorphous semiconductor.
+
+%5
+\item Provide definitions/explanations of the following:
+\begin{itemize}
+	\item Hubbard correlation energy
+	\item Localization length
+	\item Anderson transition
+	\item Localized ``in the Anderson sense"
+\end{itemize}
+
+%6
+\item \begin{enumerate}
+	\item What is the difference between variable range hopping and nearest neighbor hopping?
+	\item In which type of conduction will tunneling occur?
+\end{enumerate}
+
+\end{enumerate}
+
+\section*{References}
+\bibliography{homework2}
+\bibliographystyle{elsarticle-num}
+
+
+\end{document}  

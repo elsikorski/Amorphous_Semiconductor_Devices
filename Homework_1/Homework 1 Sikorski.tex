@@ -1,0 +1,137 @@
+\documentclass[12pt]{elsarticle}
+
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+\newcommand{\bnumbers}{\begin{enumerate}}
+	\newcommand{\enumbers}{\end{enumerate}}
+\newcommand{\vs}{\vspace{2mm}}
+\newcommand{\beq}{\begin{equation*}}
+\newcommand{\eeq}{\end{equation*}}
+\newcommand{\rr}[1]{\mbox{#1}}
+\newcommand{\longequals}{{=\joinrel=}}
+\newcommand{\squared}{$^{2}$}
+\newcommand{\subtwo}{$_{2}$}
+%tables
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.75}
+\newcommand{\fullline}{\noindent\rule{14cm}{0.4pt} \vspace{4mm}}
+
+
+\begin{document}
+\begin{flushright}
+	Ember Sikorski\par
+	Homework 1\par
+	ECE 624\par 
+	12 September 2018
+\end{flushright}
+
+
+\begin{enumerate}
+%1	
+\item Explain negative and positive U defects. Provide examples. 
+\vs
+\par 
+Negative and positive U defects are changes in electronic structure that result in give either a negative or positive correlation energy. Anderson \cite{Anderson1975} first theorized U defects to explain the interactions and magnetic properties of localized electrons in the band gap of amorphous materials. Street and Mott \cite{Street1975} expanded on this idea by proposing different states at the dangling bonds:
+\begin{equation*}
+\begin{cases}
+D^{+}, & 0 \ \rr{electrons}\\
+D^{0}, & 1 \ \rr{electrons} \\
+D^{-}, & 2 \ \rr{electrons} \qquad ,
+\end{cases}
+\end{equation*}
+formed exothermicaly via
+\begin{equation}
+2D^{0} \rightarrow D^{+}  +\  D{-} \qquad .
+\end{equation}
+This model simultaneously offers a solution for both the lack of singly occupied states seen with EPR and Fermi pinning.\par
+\vs 
+In the case of Se \cite{Mott1987,Zallen1983}, 6 electrons form the valence: 2 inactive \emph{s} electrons, 2 \emph{p} electrons that participate in bonding, and 2 lone pair \emph{p} electrons. We then consider a-Se, composed of parallel chains, with a dangling bond or unpaired electron at the end of a chain. If an electron is removed from a nearby Se in another chain, these two unpaired electrons will bond. This causes the second Se to become overcoordinated: $D^{+}$ or $C^{+}_{3}$. We can define this defect as a positive U center. A corresponding negative U center then forms, presumably through the removed electron joining a distant dangling bond, following \textbf{Eq. (1)}.
+\par \vs  
+Combinations of $D^{+}$ and $D^{-}$ defects, or valence alternation pairs (VAPs), occur in Group V: pnictide and Group VI: chalcogenide glasses.
+
+
+
+
+\fullline
+%2
+\item Explain how the type of defects might influence carrier transport in an amorphous semiconductor.
+\par \vs
+Neutral dangling bonds can trap either electrons or holes as shown in \textbf{Eq. (2)} and \textbf{(3)} \cite{Street1983}.
+
+\begin{align}
+e+D^{0} &\rightarrow D^{-} \\
+h+D^{0} &\rightarrow D^{+} 
+\end{align}
+
+However, charged bonds trap only one type of carrier:
+
+\begin{align}
+h+D^{-} &\rightarrow D^{0} \\
+e+D^{+} &\rightarrow D^{0} \quad .
+\end{align}
+
+Street et al. \cite{Street1983} studied the effect of doping in amorphous Si on the product of charge carrier drift mobility $\mu$ and lifetime $\tau$. Unlike chalcogenides, tetrahedrally bonded amorphous semiconductors are quite sensitive to doping\cite{Kittel1996}. When doped with B, ($\mu \tau$)$_{e}$ was drastically reduced while ($\mu \tau$)$_{h}$ remained nearly the same. This can be explained by B creating an excess of $D^{+}$ centers (not compensated by $D^{-}$ as with chalcogenides) that trap electrons following \textbf{Eq. 5}. Analagously, P doping led to a reduction in ($\mu \tau$)$_{h}$ while ($\mu \tau$)$_{e}$ remained constant.
+\par \vs
+
+In chalcogenide amorphous semiconductors, Kolobov \cite{Kolobov1996} posits that \textbf{Eq. 2} is reversible:
+\begin{equation}
+C^{-}_{1} \leftrightarrow C^{0}_{1} + e \quad ,
+\end{equation} 
+because $C^{-}_{1}$ causes no structural change, unlike  $C^{+}_{3}$. This leads to the excess in holes which act as the majority carrier in most amorphous chalcogendies.
+
+
+
+
+
+\fullline
+%3
+\item Describe `lone pair' electrons and what type of amorphous semiconductor these are likely to be present.
+\par \vs
+Lone pair electrons are valence electrons that do not take part in bonding \cite{Tauc1976,Tsendin2001}. These are likely to be present in semiconductors containing chalcogenides in twofold coordination\cite{Kastner1972}. In these semiconductors, the valence band is formed by the lone pair electrons, rather than the bonding electrons.
+
+
+\fullline
+%4
+\item You are tasked with determining the structure of an amorphous semiconductor. How would you go about doing this? Describe your experiment plan. Include what considerations you are making and what limitations you have.
+\par \vs 
+ I would use EXAFS, assuming access to a synchotron, to get both the average coordination number for individual elements and bond lengths \cite{Baker2006,Paesler2007}. While this would narrow down possible topologies, it would not identify one distinct structure \cite{Zallen1983}. Assuming I knew the composition, I would run \emph{Ab Initio} Molecular Dynamics to better determine the structure, which has been demonstrated to give electronic and structural results in good agreement with experiment \cite{Ispas2001,Chakraborty2017,Zhang2014}. I would perform several simulations with slightly altered starting conditions (heat and quench time) in order to get different resulting structures and thus statistical results of coordination number and bond length. By validating with experiment, I could find the structure that most closely resembles the experimental results to predict the topology. However, this will only match the exact specimen measured with EXAFS, while the real structure will likely vary. 
+ 
+
+
+\end{enumerate}
+
+\fullline
+\section*{Review of Amorphous Semiconductors - J. Tauc \cite{Tauc1976}} 
+Amorphous semiconductors exhibit nonzero states in what is traditionally the band gap, known as localized states. Optical and photoemission spectroscopy show the mobility edge is not sharp as it would be in a crystal. This is likely due to the short range order present in amorphous materials. The localized states can be either extrinsic or intrinsic, but the distinction is made that here defects refer to differences in chemical bonds. Intrinsic states tend to be very near the band edges, giving the material a similar density of states to a crystalline material. One category of defects is dangling bonds, which can be positive, neutral, or negative. Impurities or defects can change the magnetic and electronic properties of the material.
+\par 
+Chalcogenide glasses are particularly hard to understand as EPR shows few states in the gap. David Emin proposes strong electron-lattice interactions fundamentally change the electronic states from those in a crystal. An alternative explanation considers charged dangling bonds and assumes them to be lower in energy than a neutral dangling bond. High concentrations of these defects would pin the Fermi energy and their charge would explain the strong electric fields of the material.
+\par
+Transport experiments show both high mobility conduction in the extended states and low mobility conduction between localized states. Electrons may hop long distances to balance overlapping wavefunctions and small changes in energy between states. Furthermore, these long range hops can dominate at low temperatures. Vibrational modes remain difficult to analyze but work has been done to extrapolate atomic arrangement from them.
+\par 
+The nearly degenerate states in amorphous materials can lead to tunneling of the atoms. Similar behavior is seen across glasses, irrespective of their individual structure.
+\par 
+By definition amorphous materials are metastable and as such can be altered by heat, light, electron irradiation, and electric field. Their ability to change structure makes them optimal for many applications. Te containing glasses can reverse their changes while Se glasses can undergo photo-induced phase separation. Applications include transistors and optical digital memory.
+\fullline
+\section*{References}
+\bibliography{homework1}
+\bibliographystyle{elsarticle-num}
+
+
+\end{document}  

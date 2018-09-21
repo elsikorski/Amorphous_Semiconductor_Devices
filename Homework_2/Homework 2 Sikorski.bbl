@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Tauc1976}
+J.~Tauc, \href{http://physicstoday.scitation.org/toc/pto/29/10}{{Amorphous
+  semiconductors}}, Physics Today 29 (1976) 23--31.
+\newblock \href {http://dx.doi.org/10.1063/1.3024406}
+  {\path{doi:10.1063/1.3024406}}.
+\newline\urlprefix\url{http://physicstoday.scitation.org/toc/pto/29/10}
+
+\bibitem{Kim2015}
+J.~Kim, H.~Hiramatsu, H.~Hosono, T.~Kamiya, {Effects of sulfur substitution in
+  amorphous InGaZnO 4 : optical properties and fi rst-principles calculations},
+  Journal of the Ceramic Society of Japan 123~(7) (2015) 537--541.
+\newblock \href {http://dx.doi.org/10.2109/jcersj2.123.537}
+  {\path{doi:10.2109/jcersj2.123.537}}.
+
+\bibitem{Fritzsche2007}
+H.~Fritzsche, {Why are chalcogenide glasses the materials of choice for Ovonic
+  switching devices?}, Journal of Physics and Chemistry of Solids 68 (2007)
+  878--882.
+\newblock \href {http://dx.doi.org/10.1016/j.jpcs.2007.01.017}
+  {\path{doi:10.1016/j.jpcs.2007.01.017}}.
+
+\bibitem{Kazakova1999}
+L.~P. Kazakova, K.~D. Tsendin,
+  \href{https://link.springer.com/content/pdf/10.1134{\%}2F1.1187784.pdf}{{Controlling
+  the U-center density in Se-As chalcogenide-glass semiconductors by doping
+  with metals and halogens}}, Semiconductors 33~(7) (1999) 795--798.
+\newblock \href {http://dx.doi.org/10.1134/1.1187784}
+  {\path{doi:10.1134/1.1187784}}.
+\newline\urlprefix\url{https://link.springer.com/content/pdf/10.1134{\%}2F1.1187784.pdf}
+
+\end{thebibliography}

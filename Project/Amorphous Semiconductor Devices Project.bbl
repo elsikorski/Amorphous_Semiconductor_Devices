@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Raty2015}
+J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,
+  \href{http://dx.doi.org/10.1038/ncomms8467}{{Aging mechanisms in amorphous
+  phase-change materials}}, Nature Communications 6~(7467) (2015) 1--8.
+\newblock \href {http://dx.doi.org/10.1038/ncomms8467}
+  {\path{doi:10.1038/ncomms8467}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/ncomms8467}
+
+\end{thebibliography}
