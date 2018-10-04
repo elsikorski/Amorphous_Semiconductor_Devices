@@ -12,6 +12,7 @@
 \singlespacing
 \usepackage{mathptmx}
 \usepackage{float,wrapfig}
+\newcommand{\vs}{\vspace{2mm}}
 \begin{document}
 
 \begin{frontmatter}
@@ -33,6 +34,33 @@
 \end{frontmatter}
 
 \section{Introduction}
+\subsection{Why model amorphous semiconductors?}
+
+
+\subsection{How can we model amorphous semiconductors?}
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{overview}
+	\caption{Overview of computational methods with respect to time and size capabilities.}
+\end{figure}
+
+
+\section{Methods}
+\subsection{Density Functional Theory}
+\begin{itemize}
+	\item Kohn Sham: A \emph{system} of one-electrons
+	\item Hartree: a \emph{potential} of how each electrons feels the electron gas
+	\item Hartree Fock: how we describe the wave functions
+\end{itemize}
+\subsection{AIMD}
+\underline{Hohl 1991}\cite{Hohl1991} - Liquid and amorphous Se \par \vs
+\textbf{Computational comments}
+\begin{itemize}
+	\item many structural models have been proposed and often conflict
+	\item models based solely on small differences are insufficient to explain all measured features
+	\item even carefully constructed empirical potentials have difficulty in highly anisotropic covalent systems such as group-IVA elements.
+	\item AIMD avoids parameterization of interatomic forces common in MD
+\end{itemize}
+
 
 \section{Density of States}
 \underline{Raty 2015 \cite{Raty2015}} - Aging in Phase Change Materials (dots figure)
@@ -78,12 +106,7 @@
  		\item "melt-quenched model has a smaller band gap and possesses a (localized) mid-gap state"
  	\end{itemize}	
 \end{itemize}
-\section{Density Functional Theory}
-\begin{itemize}
-	\item Kohn Sham: A \emph{system} of one-electrons
-	\item Hartree: a \emph{potential} of how each electrons feels the electron gas
-	\item Hartree Fock: how we describe the wave functions
-\end{itemize}
+
 \section*{References}
 
 \bibliography{amorph}

@@ -5,6 +5,15 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Hohl1991}
+D.~Hohl, R.~O. Jones,
+  \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}{{First-principles
+  molecular-dynamics simulation of liquid and amorphous selenium}}, Physical
+  Review B 43~(5) (1991) 3856--3870.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1103/PhysRevB.43.3856}
+  {\path{doi:https://doi.org/10.1103/PhysRevB.43.3856}}.
+\newline\urlprefix\url{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}
+
 \bibitem{Raty2015}
 J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,
   \href{http://dx.doi.org/10.1038/ncomms8467}{{Aging mechanisms in amorphous

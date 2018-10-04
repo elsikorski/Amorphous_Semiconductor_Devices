@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Amorphous Semiconductor Devices Project.aux
 The style file: elsarticle-num.bst
 Database file #1: amorph.bib
-You've used 1 entry,
+You've used 2 entries,
             2937 wiz_defined-function locations,
-            680 strings with 5456 characters,
-and the built_in function-call counts, 428 in all, are:
-= -- 36
-> -- 22
+            690 strings with 5713 characters,
+and the built_in function-call counts, 799 in all, are:
+= -- 78
+> -- 29
 < -- 0
-+ -- 8
-- -- 7
-* -- 43
-:= -- 83
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 1
++ -- 11
+- -- 9
+* -- 80
+:= -- 132
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 10
-empty$ -- 35
-format.name$ -- 8
-if$ -- 92
+cite$ -- 2
+duplicate$ -- 20
+empty$ -- 75
+format.name$ -- 11
+if$ -- 185
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 1
-pop$ -- 5
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 2
+pop$ -- 10
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 34
 stack$ -- 0
-substring$ -- 13
-swap$ -- 4
+substring$ -- 44
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 18
+while$ -- 6
+width$ -- 3
+write$ -- 29

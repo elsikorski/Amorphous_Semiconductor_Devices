@@ -31,6 +31,7 @@
 \setlength{\arrayrulewidth}{0.5mm}
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.75}
+\newcommand{\fullline}{\noindent\rule{14cm}{0.4pt} \vspace{4mm}}
 
 
 
@@ -45,20 +46,13 @@
 
 \begin{enumerate}
 %1	
-\item Explain why electronic doping by introduction of suitable donor/acceptor levels in an amorphous material is difficult.
-\begin{itemize}
-	\item \cite{Tauc1976} concentration of defect states in the gap is higher than those introduced by doping
-	\item \cite{Kim2015}  Such low-coordination structure is so flexible 
-	\item \cite{Fritzsche2007} VAPS make chalc glasses immune to doping because the Fermi is pinned
-	\begin{itemize}
-		\item doping induces structural relaxation
-		\item free carriers that would be generated from dopants are now trapped
-		\item resistivity remains high (VAP)
-	\end{itemize}
-\end{itemize}
+\item Explain why electronic doping by introduction of suitable donor/acceptor levels in an amorphous material is difficult. \par \vs
+Electronic doping is difficult is amorphous materials due to the high concentration of instrinsic states in the gap \cite{Tauc1976}. When dopants are added, the concentration of introduced states is low compared to the intrinsic states, making it difficult to move the Fermi level. Additionally, with their low coordination number and flexibility, amorphous materials can undergo relaxation when dopants are added \cite{Kim2015}. This traps the added charge carriers instead of producing a system with more free carriers. This can be modeled with VAPs, which can use the added carriers to change the charge of their dangling bond \cite{Fritzsche2007}. To introduce a large enough number of states to move the Fermi level, the  number of dopants must be at least double the number of VAP defects \cite{Fritzsche2007}.
 
+\fullline
 %2
-\item Explain why the doping discussed in problem 1 might not improve carrier mobility. \par \vs
+\item Explain why the doping discussed in problem (1) might not improve carrier mobility. \par \vs
+Doping introduces charged defects,D$^{+}$ and D$^{-}$, and though these defects are only capable of trapping either electrons \emph{or} holes respectively,  they are much more effective trap sites than D$^{0}$ \cite{Street1983}. Street et al. found D$^{+}$ centers were 5 times more effective than D$^{0}$ centers at trapping eletrons and D$^{-}$ centers were 2-4 times more effective at trapping holes than D$^{0}$ centers. Similarly, Kazakova and Tsendin \cite{Kazakova1999} found that when the number of dopants is 2 to 3 times the number of defect centers, hole mobility decreases as dopant concentration increases.
 \begin{itemize}
 	\item \cite{Kazakova1999} trapping at negative defect centers likely limits hole drift mobility
 \end{itemize}

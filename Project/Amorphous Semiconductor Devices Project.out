@@ -1,3 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Density of States}{}% 2
-\BOOKMARK [1][-]{section.3}{Density Functional Theory}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{Why model amorphous semiconductors?}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{How can we model amorphous semiconductors?}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Methods}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Density Functional Theory}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{AIMD}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Density of States}{}% 7
