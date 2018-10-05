@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Homework 2 Sikorski.aux
 The style file: elsarticle-num.bst
 Database file #1: homework2.bib
-You've used 9 entries,
+Warning--empty journal in Yu2001
+You've used 13 entries,
             2937 wiz_defined-function locations,
-            758 strings with 7396 characters,
-and the built_in function-call counts, 3191 in all, are:
-= -- 347
-> -- 78
+            792 strings with 8144 characters,
+and the built_in function-call counts, 4230 in all, are:
+= -- 448
+> -- 97
 < -- 0
-+ -- 32
-- -- 23
-* -- 296
-:= -- 454
-add.period$ -- 17
-call.type$ -- 9
-change.case$ -- 9
++ -- 41
+- -- 28
+* -- 376
+:= -- 592
+add.period$ -- 22
+call.type$ -- 13
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 84
-empty$ -- 332
-format.name$ -- 30
-if$ -- 788
+cite$ -- 14
+duplicate$ -- 117
+empty$ -- 464
+format.name$ -- 36
+if$ -- 1066
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 9
-newline$ -- 50
-num.names$ -- 9
-pop$ -- 42
+int.to.str$ -- 13
+missing$ -- 14
+newline$ -- 66
+num.names$ -- 13
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 155
+skip$ -- 219
 stack$ -- 0
-substring$ -- 237
-swap$ -- 32
+substring$ -- 280
+swap$ -- 41
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 27
-width$ -- 10
-write$ -- 102
+warning$ -- 1
+while$ -- 34
+width$ -- 15
+write$ -- 137
+(There was 1 warning)

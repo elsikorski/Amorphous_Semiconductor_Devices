@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -14,7 +14,7 @@ J.~Tauc, \href{http://physicstoday.scitation.org/toc/pto/29/10}{{Amorphous
 
 \bibitem{Kim2015}
 J.~Kim, H.~Hiramatsu, H.~Hosono, T.~Kamiya, {Effects of sulfur substitution in
-  amorphous InGaZnO 4 : optical properties and fi rst-principles calculations},
+  amorphous InGaZnO 4 : optical properties and first-principles calculations},
   Journal of the Ceramic Society of Japan 123~(7) (2015) 537--541.
 \newblock \href {http://dx.doi.org/10.2109/jcersj2.123.537}
   {\path{doi:10.2109/jcersj2.123.537}}.
@@ -77,5 +77,32 @@ D.~A. Drabold, U.~Stephan, J.~Dong, S.~M. Nakhmanson,
   structure of electronic states in amorphous silicon}}, Journal of Molecular
   Graphics and Modelling 17 (2000) 285--291.
 \newline\urlprefix\url{https://pdfs.semanticscholar.org/fb3e/2ef301f3809ddf6a977296bf2f748a70dfb5.pdf}
+
+\bibitem{Lee2012}
+J.~G. Lee,
+  \href{https://www.crcpress.com/Computational-Materials-Science-An-Introduction/Lee/p/book/9781439836170}{{Computational
+  materials science : an introduction}}, CRC Press, 2012.
+\newline\urlprefix\url{https://www.crcpress.com/Computational-Materials-Science-An-Introduction/Lee/p/book/9781439836170}
+
+\bibitem{Derevyanko2018}
+S.~Derevyanko,
+  \href{http://www.nature.com/articles/s41598-017-18498-1}{{Anderson
+  localization of a one-dimensional quantum walker}}, Scientific Reports 8~(1)
+  (2018) 1795.
+\newblock \href {http://dx.doi.org/10.1038/s41598-017-18498-1}
+  {\path{doi:10.1038/s41598-017-18498-1}}.
+\newline\urlprefix\url{http://www.nature.com/articles/s41598-017-18498-1}
+
+\bibitem{Anderson1958}
+P.~W. Anderson, {Absence of Diffusion in Certain Random Lattices}, Physical
+  Review 109~(5) (1958) 1492--1505.
+
+\bibitem{Yu2001}
+Z.~G. Yu, X.~Song,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.86.6018}{{Variable
+  Range Hopping and Electrical Conductivity along the DNA Double Helix}}\href
+  {http://dx.doi.org/10.1103/PhysRevLett.86.6018}
+  {\path{doi:10.1103/PhysRevLett.86.6018}}.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.86.6018}
 
 \end{thebibliography}
