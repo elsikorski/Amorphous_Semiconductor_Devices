@@ -32,6 +32,7 @@
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.75}
 \newcommand{\fullline}{\noindent\rule{14cm}{0.4pt} \vspace{4mm}}
+\usepackage{subfigure}
 
 
 
@@ -53,24 +54,36 @@ Electronic doping is difficult is amorphous materials due to the high concentrat
 %2
 \item Explain why the doping discussed in problem (1) might not improve carrier mobility. \par \vs
 Doping introduces charged defects,D$^{+}$ and D$^{-}$, and though these defects are only capable of trapping either electrons \emph{or} holes respectively,  they are much more effective trap sites than D$^{0}$ \cite{Street1983}. Street et al. found D$^{+}$ centers were 5 times more effective than D$^{0}$ centers at trapping eletrons and D$^{-}$ centers were 2-4 times more effective at trapping holes than D$^{0}$ centers. Similarly, Kazakova and Tsendin \cite{Kazakova1999} found that when the number of dopants is 2 to 3 times the number of defect centers, hole mobility decreases as dopant concentration increases.
-\begin{itemize}
-	\item \cite{Kazakova1999} trapping at negative defect centers likely limits hole drift mobility
-\end{itemize}
+\fullline
 %3
-\item Would you expect to see blocking contacts in a metal-amorphous semiconductor contact? Explain your answer.
+\item Would you expect to see blocking contacts in a metal-amorphous semiconductor contact? Explain your answer. \par \vs 
+I would expect to see blocking contacts because of the high concentration of trap states in an a-semiconductor. Until these traps are filled, one would observe an ohmic contact at low voltages ~10V \cite{Singh2006}. However, once the states are filled, a-semiconductors exhibit space charge limited conduction (SCLC) \cite{Singh2006,Kushwaha2006,MajeedKhan2003} where carriers from the metal can only enter states in the semiconductor as carriers move from those states. High voltages (~10$^{4}$V/cm$^2$) are then needed to overcome SCLC and reach superohmic behavior\cite{Singh2006,Kushwaha2006}.
 
+\fullline
 %4
-\item Describe the structural order giving rise to extended (delocalized) states and localized states in an amorphous semiconductor.
+\item Describe the structural order giving rise to extended (delocalized) states and localized states in an amorphous semiconductor. \par \vs 
 
+Localized states can come from defects like VAPs while extended states consist of the more stable ``happy" charge carriers. Drabold et al. \cite{Drabold2000} describe this quantum mechanically by considering ``severe distortions'' or the bonds that deviate the greatest from a tetrahedral structure in the case of a-Si. As larger distortions are less likely to occur, there is less degeneracy and especially so if those disorted clusters are isolated. As distortions become less severe, they are more likely to occur and lead to mixing of states. This was seen by mapping energy resolved states (e.g. near the Fermi level, at the valence band tail, etc.) to the structure. Near the Fermi level the authors found charge localized to a small cluster exhibiting very high distortion. As they shifted the energy window towards the valence band the cluster became larger. Finally, when examining the deep valence band states the charge mapped to several small clusters. In short, localized states originate in regions with the greatest structural disorder, while extended states come from regions of ``ideal'' structure, in this case tetrahedral.
+\begin{figure}
+	\hfill
+	\subfigure[]{\includegraphics[width=5cm]{loc}}
+	\hfill
+	\subfigure[]{\includegraphics[width=5cm]{deloc}}
+	\hfill
+	\caption{Selected results from Drabold et al. \cite{Drabold2000} of structure contributing to (a) midgap states and (b) extended states. Color represents charged regions.}
+\end{figure}
+
+\fullline
 %5
 \item Provide definitions/explanations of the following:
 \begin{itemize}
 	\item Hubbard correlation energy
 	\item Localization length
-	\item Anderson transition
+	\item Anderson transition \par \vs
+	The Anderson transition describes the change from localized states in the band gap to extended or delocalized states. \cite{Drabold2000}
 	\item Localized ``in the Anderson sense"
 \end{itemize}
-
+\fullline
 %6
 \item \begin{enumerate}
 	\item What is the difference between variable range hopping and nearest neighbor hopping?

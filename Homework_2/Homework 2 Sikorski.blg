@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Homework 2 Sikorski.aux
 The style file: elsarticle-num.bst
 Database file #1: homework2.bib
-You've used 5 entries,
+You've used 9 entries,
             2937 wiz_defined-function locations,
-            719 strings with 6283 characters,
-and the built_in function-call counts, 1718 in all, are:
-= -- 186
-> -- 38
+            758 strings with 7396 characters,
+and the built_in function-call counts, 3191 in all, are:
+= -- 347
+> -- 78
 < -- 0
-+ -- 16
-- -- 11
-* -- 157
-:= -- 251
-add.period$ -- 10
-call.type$ -- 5
-change.case$ -- 5
++ -- 32
+- -- 23
+* -- 296
+:= -- 454
+add.period$ -- 17
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 44
-empty$ -- 179
-format.name$ -- 14
-if$ -- 422
+cite$ -- 9
+duplicate$ -- 84
+empty$ -- 332
+format.name$ -- 30
+if$ -- 788
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 31
-num.names$ -- 5
-pop$ -- 21
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 50
+num.names$ -- 9
+pop$ -- 42
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 89
+skip$ -- 155
 stack$ -- 0
-substring$ -- 119
-swap$ -- 18
+substring$ -- 237
+swap$ -- 32
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 15
-width$ -- 6
-write$ -- 60
+while$ -- 27
+width$ -- 10
+write$ -- 102

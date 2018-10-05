@@ -44,4 +44,38 @@ L.~P. Kazakova, K.~D. Tsendin,
   {\path{doi:10.1134/1.1187784}}.
 \newline\urlprefix\url{https://link.springer.com/content/pdf/10.1134{\%}2F1.1187784.pdf}
 
+\bibitem{Singh2006}
+R.~Singh, S.~K. Tripathi, S.~Kumar,
+  \href{https://www.sciencedirect.com/science/article/pii/S0022309306006855}{{Space
+  charge limited conduction in a-(Ge20Se80)1−xSnx thin films}}, Journal of
+  Non-Crystalline Solids 352 (2006) 3230--3235.
+\newblock \href {http://dx.doi.org/10.1016/J.JNONCRYSOL.2006.05.015}
+  {\path{doi:10.1016/J.JNONCRYSOL.2006.05.015}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0022309306006855}
+
+\bibitem{Kushwaha2006}
+V.~Kushwaha, A.~Kumar,
+  \href{https://www.sciencedirect.com/science/article/pii/S0167577X05013510}{{Space
+  charge limited conduction in bulk Se100 − xSbx chalcogenide glasses}},
+  Materials Letters 60~(17-18) (2006) 2148--2152.
+\newblock \href {http://dx.doi.org/10.1016/J.MATLET.2005.12.090}
+  {\path{doi:10.1016/J.MATLET.2005.12.090}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0167577X05013510}
+
+\bibitem{MajeedKhan2003}
+M.~A. {Majeed Khan}, M.~Zulfequar, M.~Husain,
+  \href{www.elsevier.com/locate/matlet}{{Study of density of localized states
+  of a-Se 80 Te 20{\`{A}}x Pb x films by space charge limited conduction
+  measurements}}, Materials Letters 57 (2003) 2894--2900.
+\newblock \href {http://dx.doi.org/10.1016/S0167-577X(02)01393-9}
+  {\path{doi:10.1016/S0167-577X(02)01393-9}}.
+\newline\urlprefix\url{www.elsevier.com/locate/matlet}
+
+\bibitem{Drabold2000}
+D.~A. Drabold, U.~Stephan, J.~Dong, S.~M. Nakhmanson,
+  \href{https://pdfs.semanticscholar.org/fb3e/2ef301f3809ddf6a977296bf2f748a70dfb5.pdf}{{The
+  structure of electronic states in amorphous silicon}}, Journal of Molecular
+  Graphics and Modelling 17 (2000) 285--291.
+\newline\urlprefix\url{https://pdfs.semanticscholar.org/fb3e/2ef301f3809ddf6a977296bf2f748a70dfb5.pdf}
+
 \end{thebibliography}
