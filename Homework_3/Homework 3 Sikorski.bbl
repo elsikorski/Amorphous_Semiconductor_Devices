@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Zallen1983}
+R.~Zallen (Ed.), \href{http://doi.wiley.com/10.1002/9783527617968}{{The Physics
+  of Amorphous Solids}}, John Wiley {\&} Sons, Inc., Weinheim, Germany, 1983.
+\newblock \href {http://dx.doi.org/10.1002/9783527617968}
+  {\path{doi:10.1002/9783527617968}}.
+\newline\urlprefix\url{http://doi.wiley.com/10.1002/9783527617968}
+
+\bibitem{Kim2015}
+J.~Kim, H.~Hiramatsu, H.~Hosono, T.~Kamiya, {Effects of sulfur substitution in
+  amorphous InGaZnO 4 : optical properties and first-principles calculations},
+  Journal of the Ceramic Society of Japan 123~(7) (2015) 537--541.
+\newblock \href {http://dx.doi.org/10.2109/jcersj2.123.537}
+  {\path{doi:10.2109/jcersj2.123.537}}.
+
+\end{thebibliography}

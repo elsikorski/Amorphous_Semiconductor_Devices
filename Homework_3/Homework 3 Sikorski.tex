@@ -1,0 +1,69 @@
+\documentclass[12pt]{elsarticle}
+
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+\newcommand{\bnumbers}{\begin{enumerate}}
+	\newcommand{\enumbers}{\end{enumerate}}
+\newcommand{\vs}{\vspace{2mm}}
+\newcommand{\beq}{\begin{equation*}}
+\newcommand{\eeq}{\end{equation*}}
+\newcommand{\rr}[1]{\mbox{#1}}
+\newcommand{\longequals}{{=\joinrel=}}
+\newcommand{\squared}{$^{2}$}
+\newcommand{\subtwo}{$_{2}$}
+%tables
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.75}
+\newcommand{\fullline}{\noindent\rule{14cm}{0.4pt} \vspace{4mm}}
+\usepackage{subfigure}
+
+
+
+\begin{document}
+\begin{flushright}
+	Ember Sikorski\par
+	Homework 3\par
+	ECE 624\par 
+	19 October 2018
+\end{flushright}
+
+
+\begin{enumerate}
+%1	
+\item Describe the potential processes for optical absorption in an amorphous material, such as Ge$_{2}$Se$_{3}$. \par \vs
+
+
+%2
+\item Describe the processes involved in photoconductivity of a binary amorphous chalcogenide.
+
+
+%3
+\item Describe a Tauc plot and the application to an amorphous material. \par \vs
+A Tauc plot show the transmission with respect to photon energy \cite{Zallen1983,Kim2015}. Taking the slope of the curve and finding its intercept at either 0 or 10$^{4}$ gives the optical band gap. This approach can be used to compare optical band gaps between samples, under compression, at different pressures, at different concentrations, e.g. $x$ in a-InGaZnO$_{4-x}$S$_{x}$ \cite{Kim2015}, etc.
+
+\end{enumerate}
+
+
+\section*{References}
+\bibliography{homework3}
+\bibliographystyle{elsarticle-num}
+
+
+\end{document}  
