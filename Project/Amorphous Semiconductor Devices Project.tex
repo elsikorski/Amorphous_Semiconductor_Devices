@@ -45,7 +45,36 @@
 
 
 \section{Methods}
+
+
+\subsection{Field Theory}
+
+\subsection{Monte Carlo}
+
+\subsection{Molecular Dynamics}
+
 \subsection{Density Functional Theory}
+\begin{equation}
+\hat{H}=-\frac{1}{2}\sum_{i}^{n}\nabla_{i}^{2}-\sum_{I}^{N}\sum_{i}^{n}\frac{Z_{I}}{|r_{Ii}|}+\sum_{i\neq j}^{n}\frac{1}{|r_{ij}|}
+\end{equation}
+
+\begin{equation}
+\rho (r) = \sum_{i}|\phi _{i}(r)|^{2}
+\end{equation}
+
+
+\subsection{Ab Intio Molecular Dynamics}
+Raty et al. \cite{Raty2015} used Ab Initio Molecular Dynamics to understand the structural changes associated with aging in GeTe, and the effects those changes have on performance. Inherently out of equilibrium, amorphous materials evolve with time to a lower energetic state. In the case of phase change materials, this evolution leads to higher electrical resistivity that undermines its usability in multilevel memory devices. Using AIMD, we can watch the structure evolve, but though we discussed the addition of time to DFT above, this time is still on the order of picoseconds, leaving real-time aging out of the quesion. Raty et al. have sidestepped this problem by creating an arrangement of structures with varying local motifs. 
+\par
+Their study begins with the observation that AIMD simulations of Ge$_{x}$Sb$_{y}$Te$_{1+x+y}$ alloys show tetrahedrally bonded Ge (Ge$^{T}$) atoms in the amorphous phase, though these are absent in crystalline Ge. To investigate the effect of such homopolar bonds on GeTe properties, the authors melt-quenched combination of other binary chalcogenides as "templates." SiTe forms numerous Si$^{T}$, GeSe contains some Ge$^{T}$, and SnTe contains almost no tetrahedral motifs.  The authors then substituted one species in each of the template compounds to form GeTe, i.e. substituting Si in SiTe with Ge, Se in GeSe with Te, and Sn in SnTe with Ge.
+
+
+
+
+\pagebreak
+
+\section*{Notes}
+
 \begin{itemize}
 	\item Kohn Sham: A \emph{system} of one-electrons
 	\item Hartree: a \emph{potential} of how each electrons feels the electron gas
@@ -61,8 +90,6 @@
 	\item AIMD avoids parameterization of interatomic forces common in MD
 \end{itemize}
 
-
-\section{Density of States}
 \underline{Raty 2015 \cite{Raty2015}} - Aging in Phase Change Materials (dots figure)
 \par
 \begin{itemize}
@@ -92,20 +119,21 @@
 		\item Berendsen thermostat
 		\item 10 models produced starting from liquid
 	\end{itemize}	
- 	\item Results
- 	\begin{itemize}
- 		\item Ge$^{T}$ is associated with homopolar Ge-Ge bonds
- 		\item heat of formaion shows homopolar bonds more favorable in GeTe than GeSe and SnTe
- 		\item wanted to investigate effects of varying amounts Ge-Ge bonds
- 		\item used different alloys along the phase diagram and substituted with Ge or Te to form different GeTe structures "mimicking aging"
- 		\item homopolar bonds correlated with tetrahedral Ge
- 		\item freezing at density of amorphous GeTe, tetrahedral rich models had the largest values of stress
- 		\item this agrees with experiments showing the drift of PCMS is accompanied by stress relief
- 		\item order parameter $d_{4}/d_{0}$ goes from tetrahedrally bonded Ge, $Ge^{T}$, to $Ge^{III}$ and $d_{3}/d_{0}$ goes from $Te^{II}$ to $Te^{III}$
- 		\item increase in band gap directly linked to decrease in homopolar bonds
- 		\item "melt-quenched model has a smaller band gap and possesses a (localized) mid-gap state"
- 	\end{itemize}	
+	\item Results
+	\begin{itemize}
+		\item Ge$^{T}$ is associated with homopolar Ge-Ge bonds
+		\item heat of formaion shows homopolar bonds more favorable in GeTe than GeSe and SnTe
+		\item wanted to investigate effects of varying amounts Ge-Ge bonds
+		\item used different alloys along the phase diagram and substituted with Ge or Te to form different GeTe structures "mimicking aging"
+		\item homopolar bonds correlated with tetrahedral Ge
+		\item freezing at density of amorphous GeTe, tetrahedral rich models had the largest values of stress
+		\item this agrees with experiments showing the drift of PCMS is accompanied by stress relief
+		\item order parameter $d_{4}/d_{0}$ goes from tetrahedrally bonded Ge, $Ge^{T}$, to $Ge^{III}$ and $d_{3}/d_{0}$ goes from $Te^{II}$ to $Te^{III}$
+		\item increase in band gap directly linked to decrease in homopolar bonds
+		\item "melt-quenched model has a smaller band gap and possesses a (localized) mid-gap state"
+	\end{itemize}	
 \end{itemize}
+
 
 \section*{References}
 
