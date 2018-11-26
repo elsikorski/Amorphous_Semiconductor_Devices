@@ -5,6 +5,26 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Skuja2005}
+L.~Skuja, M.~Hirano, H.~Hosono, K.~Kajihara, {Defects in oxide glasses},
+  Physica Status Solidi C: Conferences 2~(1) (2005) 15--24.
+\newblock \href {http://arxiv.org/abs/NIHMS150003} {\path{arXiv:NIHMS150003}},
+  \href {http://dx.doi.org/10.1002/pssc.200460102}
+  {\path{doi:10.1002/pssc.200460102}}.
+
+\bibitem{Street1975}
+R.~A. Street, N.~F. Mott,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}{{States
+  in the Gap in Glassy Semiconductors}}, Physical Review Letters 35~(19) (1975)
+  1293--1295.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}
+
+\bibitem{Mott1987}
+S.~N. Mott,
+  \href{https://global.oup.com/academic/product/conduction-in-non-crystalline-materials-9780198539797?lang=en{\&}cc=lu}{{Conduction
+  in non-crystalline materials}}, Oxford University Press, 1987.
+\newline\urlprefix\url{https://global.oup.com/academic/product/conduction-in-non-crystalline-materials-9780198539797?lang=en{\&}cc=lu}
+
 \bibitem{Zallen1983}
 R.~Zallen (Ed.), \href{http://doi.wiley.com/10.1002/9783527617968}{{The Physics
   of Amorphous Solids}}, John Wiley {\&} Sons, Inc., Weinheim, Germany, 1983.

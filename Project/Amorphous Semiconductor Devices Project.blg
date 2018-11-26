@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Amorphous Semiconductor Devices Project.aux
 The style file: elsarticle-num.bst
 Database file #1: amorph.bib
-You've used 2 entries,
+Warning--empty publisher in Sholl2009
+You've used 5 entries,
             2937 wiz_defined-function locations,
-            690 strings with 5713 characters,
-and the built_in function-call counts, 799 in all, are:
-= -- 78
-> -- 29
+            713 strings with 6282 characters,
+and the built_in function-call counts, 1648 in all, are:
+= -- 148
+> -- 62
 < -- 0
-+ -- 11
-- -- 9
-* -- 80
-:= -- 132
-add.period$ -- 4
-call.type$ -- 2
-change.case$ -- 2
++ -- 24
+- -- 19
+* -- 139
+:= -- 243
+add.period$ -- 8
+call.type$ -- 5
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 20
-empty$ -- 75
-format.name$ -- 11
-if$ -- 185
+cite$ -- 6
+duplicate$ -- 45
+empty$ -- 183
+format.name$ -- 23
+if$ -- 410
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 2
-pop$ -- 10
+int.to.str$ -- 5
+missing$ -- 7
+newline$ -- 29
+num.names$ -- 5
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 34
+skip$ -- 87
 stack$ -- 0
-substring$ -- 44
-swap$ -- 8
+substring$ -- 75
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 29
+warning$ -- 1
+while$ -- 11
+width$ -- 6
+write$ -- 54
+(There was 1 warning)

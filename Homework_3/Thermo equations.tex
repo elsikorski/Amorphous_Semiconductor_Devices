@@ -1,0 +1,47 @@
+\documentclass[12pt]{elsarticle}
+
+\usepackage{lineno,hyperref,notoccite,etoolbox}
+\makeatletter
+\def\ps@pprintTitle{%
+	\let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{\centerline{\thepage}}%
+	\let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{setspace}
+\singlespacing
+\usepackage{mathptmx}
+\usepackage{float,wrapfig}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+\newcommand{\bnumbers}{\begin{enumerate}}
+	\newcommand{\enumbers}{\end{enumerate}}
+\newcommand{\vs}{\vspace{2mm}}
+\newcommand{\beq}{\begin{equation*}}
+\newcommand{\eeq}{\end{equation*}}
+\newcommand{\rr}[1]{\mbox{#1}}
+\newcommand{\longequals}{{=\joinrel=}}
+\newcommand{\squared}{$^{2}$}
+\newcommand{\subtwo}{$_{2}$}
+%tables
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.75}
+\newcommand{\fullline}{\noindent\rule{14cm}{0.4pt} \vspace{4mm}}
+\usepackage{subfigure}
+
+
+
+\begin{document}
+
+
+\begin{align}
+x
+\end{align}
+
+
+\end{document}  

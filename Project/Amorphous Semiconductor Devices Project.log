@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 NOV 2018 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 NOV 2018 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,44 +482,103 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.63 \end{equation}
-                    <./overview.png>] [3] [4]
-(./Amorphous Semiconductor Devices Project.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+l.62 \begin{equation}
+                      <./overview.png>]
+<practical1.png, id=68, 829.0975pt x 573.14125pt>
+File: practical1.png Graphic file (type png)
+ <use practical1.png>
+Package pdftex.def Info: practical1.png used on input line 101.
+(pdftex.def)             Requested size: 234.0pt x 161.75528pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3] <raty1.png, id=85, 627.34375pt x 640.3925pt>
+File: raty1.png Graphic file (type png)
+ <use raty1.png>
+Package pdftex.def Info: raty1.png used on input line 110.
+(pdftex.def)             Requested size: 234.0pt x 238.86652pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<raty2.png, id=88, 885.3075pt x 463.7325pt>
+File: raty2.png Graphic file (type png)
+ <use raty2.png>
+Package pdftex.def Info: raty2.png used on input line 119.
+(pdftex.def)             Requested size: 234.0pt x 122.5701pt.
+
+<raty3.png, id=90, 417.56pt x 505.89pt>
+File: raty3.png Graphic file (type png)
+ <use raty3.png>
+Package pdftex.def Info: raty3.png used on input line 124.
+(pdftex.def)             Requested size: 140.40143pt x 170.10138pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.128 
+       <./practical1.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.131 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.131 
+       <./raty1.png> <./raty2.png>] [6pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 	\end{itemize}
+                     <./raty3.png>]
+(./Amorphous Semiconductor Devices Project.bbl [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
 
 (./Amorphous Semiconductor Devices Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `"Amorphous Semiconductor Devices Project".ou
 t' has not changed.
-(rerunfilecheck)             Checksum: 13C6A0412E26264B00965F63D1777058;656.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+(rerunfilecheck)             Checksum: A22D518D0AFAED911898EDBED2B35D62;656.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 6948 strings out of 493014
- 101320 string characters out of 6133351
- 197789 words of memory out of 5000000
- 10351 multiletter control sequences out of 15000+600000
- 37055 words of font info for 81 fonts, out of 8000000 for 9000
+ 6993 strings out of 493014
+ 101897 string characters out of 6133351
+ 199834 words of memory out of 5000000
+ 10376 multiletter control sequences out of 15000+600000
+ 37783 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,30p,943b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,30p,943b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on "Amorphous Semiconductor Devices Project.pdf" (5 pages, 76597
-5 bytes).
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on "Amorphous Semiconductor Devices Project.pdf" (8 pages, 22638
+82 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
