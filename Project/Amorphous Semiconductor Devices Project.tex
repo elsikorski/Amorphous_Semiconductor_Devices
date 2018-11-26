@@ -38,9 +38,11 @@
 
 
 \subsection{How can we model amorphous semiconductors?}
+Computational modeling spans length scales from the order of meters, that we experience, to the order of Angstroms, that atoms experience. Due to this vast range of length scales, no one method can address all properties. Following, computational methods are broken down into four main categories (Figure 1): First principles or \textit{ab initio}, molecular dynamics (MD), mesoscale methods such as Monte Carlo (MC), and continuum methods such as finite element analysis (FEA)\cite{Lee2012}.
 \begin{figure}[H]
-	\includegraphics[width=\textwidth]{overview}
-	\caption{Overview of computational methods with respect to time and size capabilities.}
+	\includegraphics[width=0.5\textwidth]{overview}
+	\centering
+	\caption{Overview of computational methods with respect to time and size capabilities. \cite{Lee2012}}
 \end{figure}
 
 
@@ -96,13 +98,18 @@ where $K$ is the kinetic energy, $U$ is the potential energy, and $N$ is the num
 \subsection{\emph{Ab intio} Molecular Dynamics}
 \emph{Ab initio} Molecular Dynamics (AIMD) refers to any calculation that advances atoms along classical trajectories based on forces calculated from DFT\cite{Sholl2009}.
 \par 
-AIMD is an incredibly powerful method capable of adding time to a DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in Figure YYY.
+AIMD is an incredibly powerful method capable of adding time to a DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in Figure YYY. Instead of performing AIMD as a stepwise process in which calculating the atomic trajectories and the electronic ground state are separate, Car and Parinello formulated the two to run simultaneously. Their extended Lagrangian introduces the electronic degrees of freedom as fictitious dynamical variables:
+\begin{equation}
+L =\frac{1}{2}\sum_{i=1}^{3N}m_{i}v^{2}_{i}-U(r_{1}, \cdots, r_{3N})+\frac{1}{2}\sum_{j}2\mu \int d\vec{r}|\dot{\psi}(\vec{r})|^{2}+L_{ortho}
+\end{equation}
+The third term introduces fictitious mass, $\mu$, and the final term restrains the one-electron wave functions to be orthogonal. Since the total energy calculation occurs simultaneously with the atomic trajectory calculation, the energy is not quite the same as the energy calculated with pure DFT, as shown in Figure YYY. This phenemona circumvents the structure getting trapped in a metastable state, as DFT methods are known to do \cite{Dorado2013}.
 \begin{figure}[h]
 	\includegraphics[width=0.5\textwidth]{practical1}
 	\centering
 	\caption{} 
 \end{figure}
 
+\subsubsection{AIMD for Phase Change Memory}
 Raty et al. \cite{Raty2015} used Ab Initio Molecular Dynamics to understand the structural changes associated with aging in GeTe, and the effects those changes have on performance. Inherently out of equilibrium, amorphous materials evolve with time to a lower energetic state. In the case of phase change materials, this evolution leads to higher electrical resistivity that undermines its usability in multilevel memory devices. Using AIMD, we can watch the structure evolve, but though we discussed the addition of time to DFT above, this time is still on the order of picoseconds, leaving real-time aging out of the quesion. Raty et al. have sidestepped this problem by creating an arrangement of structures with varying local motifs. 
 \par
 Their study begins with the observation that AIMD simulations of Ge$_{x}$Sb$_{y}$Te$_{1+x+y}$ alloys show tetrahedrally bonded Ge (Ge$^{T}$) atoms in the amorphous phase, though these are absent in crystalline Ge. To investigate the effect of such homopolar bonds on GeTe properties, the authors melt-quenched GeTe along with a combination of other binary chalcogenides for use as``templates." SiTe forms numerous Si$^{T}$, GeSe contains some Ge$^{T}$, and SnTe contains almost no tetrahedral motifs.  The authors then substituted one species in each of the template compounds to form GeTe, i.e. substituting Si in SiTe with Ge, Se in GeSe with Te, and Sn in SnTe with Ge. After substitution, the systems were subjected to a shorter additional melt-quench procedure.
@@ -125,6 +132,8 @@ Raty et al. additionally calculated the changes in the electronic and optical ba
 	\centering
 	\caption{Results from Raty et al. \cite{Raty2015} for (a) experimental absorption from photothermal deflection spectroscopy (PDS) and (b) calculated absorption oscillator strength for melt-quenched GeTe (green), substituted a-GeSe (pink), and substituted a-Sn-Te (violet). } 
 \end{figure}
+
+\subsubsection{Example AIMD melt-quench run}
 
 
 \pagebreak

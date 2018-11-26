@@ -7,4 +7,6 @@
 \BOOKMARK [2][-]{subsection.2.3}{Molecular Dynamics}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.4}{Density Functional Theory}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.5}{Ab intio Molecular Dynamics}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.6}{AIMD}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.5.1}{AIMD for Phase Change Memory}{subsection.2.5}% 10
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Example AIMD melt-quench run}{subsection.2.5}% 11
+\BOOKMARK [2][-]{subsection.2.6}{AIMD}{section.2}% 12
