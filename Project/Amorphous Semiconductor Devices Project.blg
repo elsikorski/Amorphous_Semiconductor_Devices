@@ -4,45 +4,45 @@ The top-level auxiliary file: Amorphous Semiconductor Devices Project.aux
 The style file: elsarticle-num.bst
 Database file #1: amorph.bib
 Warning--empty publisher in Sholl2009
-You've used 6 entries,
+You've used 9 entries,
             2937 wiz_defined-function locations,
-            722 strings with 6567 characters,
-and the built_in function-call counts, 1965 in all, are:
-= -- 176
-> -- 81
+            754 strings with 7506 characters,
+and the built_in function-call counts, 3055 in all, are:
+= -- 285
+> -- 132
 < -- 0
-+ -- 31
-- -- 25
-* -- 167
-:= -- 291
-add.period$ -- 9
-call.type$ -- 6
-change.case$ -- 4
++ -- 50
+- -- 41
+* -- 281
+:= -- 451
+add.period$ -- 15
+call.type$ -- 9
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 53
-empty$ -- 212
-format.name$ -- 30
-if$ -- 486
+cite$ -- 10
+duplicate$ -- 83
+empty$ -- 315
+format.name$ -- 49
+if$ -- 751
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 8
-newline$ -- 32
-num.names$ -- 6
-pop$ -- 42
+int.to.str$ -- 9
+missing$ -- 11
+newline$ -- 47
+num.names$ -- 9
+pop$ -- 57
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 104
+skip$ -- 155
 stack$ -- 0
-substring$ -- 91
-swap$ -- 13
+substring$ -- 133
+swap$ -- 25
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 14
-width$ -- 7
-write$ -- 62
+while$ -- 23
+width$ -- 10
+write$ -- 95
 (There was 1 warning)

@@ -8,6 +8,44 @@
 \bibitem{Lee2012}
 J.~G. Lee, {Computational Materials Science: An Introduction}, CRC Press, 2012.
 
+\bibitem{Gutierrez2002}
+G.~Guti{\'{e}}rrez, B.~Johansson,
+  \href{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}{{Molecular
+  dynamics study of structural properties of amorphous Al2O3}}, Physical Review
+  B 65~(104202) (2002) 1--9.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevB.65.104202}
+  {\path{doi:10.1103/PhysRevB.65.104202}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}
+
+\bibitem{Longo2004}
+E.~Longo, E.~Orhan, F.~M. Pontes, C.~D. Pinheiro, E.~R. Leite, J.~A. Varela,
+  P.~S. Pizani, T.~M. Boschi, F.~Lanciotti, A.~Beltr{\'{a}}, J.~Andr{\'{e}},
+  \href{https://journals.aps.org/prb/pdf/10.1103/PhysRevB.69.125115}{{Density
+  functional theory calculation of the electronic structure of Ba0.5Sr0.5TiO3:
+  Photoluminescent properties and structural disorder}}, Physical Review B
+  69~(125115) (2004) 1--7.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevB.69.125115}
+  {\path{doi:10.1103/PhysRevB.69.125115}}.
+\newline\urlprefix\url{https://journals.aps.org/prb/pdf/10.1103/PhysRevB.69.125115}
+
+\bibitem{Paier2007}
+J.~Paier, M.~Marsman, G.~Kresse,
+  \href{http://aip.scitation.org/doi/10.1063/1.2747249}{{Why does the B3LYP
+  hybrid functional fail for metals?}}, The Journal of Chemical Physics
+  127~(2024103) (2007) 1--10.
+\newblock \href {http://dx.doi.org/10.1063/1.2747249}
+  {\path{doi:10.1063/1.2747249}}.
+\newline\urlprefix\url{http://aip.scitation.org/doi/10.1063/1.2747249}
+
+\bibitem{Hohl1991}
+D.~Hohl, R.~O. Jones,
+  \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}{{First-principles
+  molecular-dynamics simulation of liquid and amorphous selenium}}, Physical
+  Review B 43~(5) (1991) 3856--3870.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1103/PhysRevB.43.3856}
+  {\path{doi:https://doi.org/10.1103/PhysRevB.43.3856}}.
+\newline\urlprefix\url{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}
+
 \bibitem{Sholl2009}
 D.~S. Sholl, J.~A. Steckel, {Density Functional Theory: A Practical
   Introduction}, 2009.
@@ -34,14 +72,5 @@ J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,
 \newblock \href {http://dx.doi.org/10.1038/ncomms8467}
   {\path{doi:10.1038/ncomms8467}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1038/ncomms8467}
-
-\bibitem{Hohl1991}
-D.~Hohl, R.~O. Jones,
-  \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}{{First-principles
-  molecular-dynamics simulation of liquid and amorphous selenium}}, Physical
-  Review B 43~(5) (1991) 3856--3870.
-\newblock \href {http://dx.doi.org/https://doi.org/10.1103/PhysRevB.43.3856}
-  {\path{doi:https://doi.org/10.1103/PhysRevB.43.3856}}.
-\newline\urlprefix\url{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}
 
 \end{thebibliography}
