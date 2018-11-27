@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -8,6 +8,14 @@
 \bibitem{Lee2012}
 J.~G. Lee, {Computational Materials Science: An Introduction}, CRC Press, 2012.
 
+\bibitem{White2014}
+C.~E. White, N.~J. Henson, L.~L. Daemen, M.~Hartl, K.~Page,
+  \href{https://pubs.acs.org/sharingguidelines}{{Uncovering the True Atomic
+  Structure of Disordered Materials: The Structure of a Hydrated Amorphous
+  Magnesium Carbonate (MgCO 3 {\textperiodcentered}3D 2 O)}}\href
+  {http://dx.doi.org/10.1021/cm500470g} {\path{doi:10.1021/cm500470g}}.
+\newline\urlprefix\url{https://pubs.acs.org/sharingguidelines}
+
 \bibitem{Gutierrez2002}
 G.~Guti{\'{e}}rrez, B.~Johansson,
   \href{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}{{Molecular
@@ -16,6 +24,19 @@ G.~Guti{\'{e}}rrez, B.~Johansson,
 \newblock \href {http://dx.doi.org/10.1103/PhysRevB.65.104202}
   {\path{doi:10.1103/PhysRevB.65.104202}}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}
+
+\bibitem{Sholl2009}
+D.~S. Sholl, J.~A. Steckel, {Density Functional Theory: A Practical
+  Introduction}, 2009.
+
+\bibitem{Paier2007}
+J.~Paier, M.~Marsman, G.~Kresse,
+  \href{http://aip.scitation.org/doi/10.1063/1.2747249}{{Why does the B3LYP
+  hybrid functional fail for metals?}}, The Journal of Chemical Physics
+  127~(2024103) (2007) 1--10.
+\newblock \href {http://dx.doi.org/10.1063/1.2747249}
+  {\path{doi:10.1063/1.2747249}}.
+\newline\urlprefix\url{http://aip.scitation.org/doi/10.1063/1.2747249}
 
 \bibitem{Longo2004}
 E.~Longo, E.~Orhan, F.~M. Pontes, C.~D. Pinheiro, E.~R. Leite, J.~A. Varela,
@@ -28,15 +49,6 @@ E.~Longo, E.~Orhan, F.~M. Pontes, C.~D. Pinheiro, E.~R. Leite, J.~A. Varela,
   {\path{doi:10.1103/PhysRevB.69.125115}}.
 \newline\urlprefix\url{https://journals.aps.org/prb/pdf/10.1103/PhysRevB.69.125115}
 
-\bibitem{Paier2007}
-J.~Paier, M.~Marsman, G.~Kresse,
-  \href{http://aip.scitation.org/doi/10.1063/1.2747249}{{Why does the B3LYP
-  hybrid functional fail for metals?}}, The Journal of Chemical Physics
-  127~(2024103) (2007) 1--10.
-\newblock \href {http://dx.doi.org/10.1063/1.2747249}
-  {\path{doi:10.1063/1.2747249}}.
-\newline\urlprefix\url{http://aip.scitation.org/doi/10.1063/1.2747249}
-
 \bibitem{Hohl1991}
 D.~Hohl, R.~O. Jones,
   \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}{{First-principles
@@ -45,10 +57,6 @@ D.~Hohl, R.~O. Jones,
 \newblock \href {http://dx.doi.org/https://doi.org/10.1103/PhysRevB.43.3856}
   {\path{doi:https://doi.org/10.1103/PhysRevB.43.3856}}.
 \newline\urlprefix\url{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}
-
-\bibitem{Sholl2009}
-D.~S. Sholl, J.~A. Steckel, {Density Functional Theory: A Practical
-  Introduction}, 2009.
 
 \bibitem{Zhang2015}
 Y.-J. Zhang, J.-H. Lan, C.-Z. Wang, Q.-Y. Wu, T.~Bo, Z.-F. Chai, W.-Q. Shi,

@@ -47,11 +47,91 @@ Computational modeling spans length scales from the order of meters, that we exp
 
 
 
+\section{First Principles}
+First principles, or \emph{ab initio}, modeling is derived solely from quantum mechanics and considers the nuclei and atoms of a system. The term "first principles" refers to the models ability to solve for electronic and structural properties knowing only the constituent atomic species or, rather, no experimental input. The method is based on the Schr\"odinger's equation. However, this equation can only be analytically solved for hydrogen. To extend its applicability, several assumptions and approximations must be made to yield density functional theory (DFT).
+\par 
+In short, DFT does not consider gravity, relativity, or excited states \cite{Lee2012}. The nuclei and electrons are considered separately, known as the Born-Oppenheimer approximation, as nuclei are 10,000 times more massive than electrons, in the case of semiconductors, and the electrons will instantaneously move with them.  These simplifications yield the following Hamiltonian:
+
+\begin{equation}
+\hat{H}=-\frac{1}{2}\sum_{i}^{n}\nabla_{i}^{2}-\sum_{I}^{N}\sum_{i}^{n}\frac{Z_{I}}{|\vec{r}_{Ii}|}+\sum_{i\neq j}^{n}\frac{1}{|\vec{r}_{ij}|} \qquad 
+\end{equation}
+where $N$ is the number of nuclei, $n$ is the number of electrons, $Z_{I}$ is the charge of the nuclei, $\nabla^{2}$ is the Laplacian operator, and $\vec{r}$ is the position. The first term is the kinetic energy, the second is the potential between electrons and nuclei, and the third is the potential between electrons. Energy is calculated by taking the expectation value of the Hamiltonian:
+\begin{equation}
+	E = \sum_{i,j} \int \Psi_{i}^{*} (\vec{r}) \Bigg(-\frac{1}{2}\sum_{i}^{n}\nabla_{i}^{2}-\sum_{I}^{N}\sum_{i}^{n}\frac{Z_{I}}{|\vec{r}_{Ii}|}+\sum_{i\neq j}^{n}\frac{1}{|\vec{r}_{ij}|}\Bigg)\Psi_{i}(\vec{r})d\vec{r}
+\end{equation}
+ The Kohn-Sham approach is applied to turn the \emph{n}-electron system into a fictitious system of one-electrons. Solving the Kohn-Sham Hamiltonian yield the Kohn-Sham orbitals $\phi_{i}(\vec{r})$:
+ 
+ \begin{equation}
+ \bigg[-\frac{1}{2}\nabla^{2}+U_{eff}(\vec{r})\bigg]\phi_{i}(\vec{r}) = \epsilon_{i}\phi_{i}(\vec{r}) \Rightarrow \hat{H_{KS}}\phi_{i} = \epsilon_{i}\phi_{i}(\vec{r}) \qquad ,
+ \end{equation}
+where $\epsilon_{i}$ are the Kohn-Sham eigenvalues. The electron density is then found by summing over the squares of the non-interacting Kohn Sham orbitals:
+
+\begin{equation}
+\rho (r) = \sum_{i}|\phi _{i}(r)|^{2} \qquad.
+\end{equation}
+The third term of the Hamiltonian, the potential energy between electrons, is split into Hartree energy and exchange-correlation energy. The Hartree energy is  the potential felt on each electron by a homogeneous electron gas of all the other electrons. Exchange energy describes the interaction of same spin electrons and correlation energy describes the interaction of different spin electrons.
+\begin{figure}[h]
+	\includegraphics[width=0.6\textwidth]{scf}
+	\centering
+	\caption{Self-consistent framework (SFC) loop used in DFT \cite{Lee2012}.} 
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{lee1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{sholl1}
+		\centering
+	\end{minipage}
+	\caption{Energy schematic \cite{Lee2012} (left) and Jacob's ladder depiction \cite{Sholl2009} of various functionals.}
+\end{figure}
+Meta-GGA, also referred to as hybrid functionals, combine Hartree Fock with DFT functionals. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
+
+\subsection{Photoluminescence in amorphous perovskites}
+\begin{figure}[h]
+	\includegraphics[width=0.6\textwidth]{longo3}
+	\centering
+	\caption{UV-visible absorbance spectra for crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ films from Longo et al. \cite{Longo2004}} 
+\end{figure}
+Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminescence in their amorphous titanates. They chose  crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ (BST) for computational analysis using the B3LYP functional. From x-ray absorption near edge spectra (XANES), they determined the amorphous titanates contained both fivefold and sixfold oxygen-titanium coordination. In order to create this coordination, they shifted the Ti atom by 0.5 $\AA$, as shown in Fig. YYY. From the band gap in Fig. YYY, the indirect bandgap in crystalline BST is equal to 3.78 eV, in agreement with the optical bandgap found in experiment (Figure. YYY). For amorphous BST, this indirect bandgap decreases to 3.06 eV. The LDOS in Fig. YYY show the valence band is made up of O states while the conduction band is made of Ti states. The authors note covalent bonding occurs between Ti and O, through the overlap of Ti 3d states and O 2p states. The nature of the bonding is further realized in Fig. YYY(a). A  valley exists in the surface plot between Ba and Sr, indicating ionic bonding. Conversely, the charge density between Ti and O is higher and can additionall by seen in the contour map as exhibiting regions of the same charge. These characteristics point to covalent bonding. Fig. YYY(b) emphasizes the distinction between the Ti-O bonds in crystalline an amorphous BST: the covalent bonds are weaker in amorphous BST as the contour map shows reduced regions of the same charge density. These results suggest that the change in the Urbach tail of the absorption spectra is due to the disorder in the amorphous structure which leads to localized states in the O 2p orbitals.
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{longo1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=0.82\textwidth]{longo2}
+		\centering
+	\end{minipage}
+	\caption{Calculated band structure (left) and density of states (right) from Longo et al. \cite{Longo2004} for crystalline (top) and amorphous (bottom) Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$.}
+\end{figure}
 
 
-\section{Field Theory}
 
-\section{Monte Carlo}
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{longoA}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=0.95\textwidth]{longoB}
+		\centering
+	\end{minipage}
+	\caption{Charge density from surface and contour plots from Longo et al. \cite{Longo2004} for crystalline and amorphous  Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$. (a) shows the vertical diagonal plane and (b) shows a horizontal plane.}
+\end{figure}
+
+\par
+
+Though the band gap results of Longo et al. agree well with their experimental data, the structure they modeled is not entirely amorphous. Due to their small unit cell of 1 $\times$ 1 $\times$ 2, this creates a periodic structure in which half of the Ti have distorted local bonding. If there were greater distribution of bond lengths and types, it is likely further details in the photoluminescence mechanism could be unearthed.
+\par
+
+Additionally, the B3LYP is a partially empirical functional \cite{Paier2007}. Due to the fixed nature of empirical potentials, this method may struggle in accurately representing the system if the system exhibits any anisotropy \cite{Hohl1991}. Paier et al. \cite{Paier2007} have shown that B3LYP performs poorly for metals and small gap semiconductors, which would be better described with nonempirical hybrid functionals such as PBE0 and HSE03. At the high computational cost of a hybrid functional, a nonempirical functioanl may be better suited for such a study.
+
 
 \section{Molecular Dynamics}
 
@@ -111,75 +191,42 @@ When compared with experimental structure factor, the results are in general agr
 %rings, gamma-alumina
 
 
-
-
-
-
-
-\section{Density Functional Theory}
-\begin{equation}
-\hat{H}=-\frac{1}{2}\sum_{i}^{n}\nabla_{i}^{2}-\sum_{I}^{N}\sum_{i}^{n}\frac{Z_{I}}{|r_{Ii}|}+\sum_{i\neq j}^{n}\frac{1}{|r_{ij}|}
-\end{equation}
+\section{Monte Carlo}
+Reverse Monte Carlo (RMC) algorithm can be used to find atomicstic models from experimental data, commonly diffraction results. This large length scale method can produce unit cells on the order of thousands of atoms. The simulation begins with a unit cell with the desired atomic species and undergoes an iterative process of random atomic movements \cite{White2014}. If the movement creates a structure that better matches experiment, the movement is accepted. If the movement creates a structure yielding results less like diffraction data, the movement is rejected. Using this method in combination with DFT can help over come the energetic barries to atomic reconfiguration. The authors note that creating stochastic models and relaxing with DFT can create unphysical structures. To avoid this problem, White et al. \cite{White2014} use an RMC algorithm that is restrained to favor simpler solutions.
+\par 
+The authors began with a pair distribution function (PDF) generated from a  successful molecular dynamics model of a-Si referred to as WWW. Next, they created a random 512 atom unit cell and optimized the structure following
 
 \begin{equation}
-\rho (r) = \sum_{i}|\phi _{i}(r)|^{2}
+\chi = \frac{w_{PDF}}{N}\sum_{j}\sum_{r} \frac{[g_{j}(r)-g_{expt}(r)]}{r^{2}}+\frac{w_{L}}{N}\sum_{ij}L_{ij} \qquad ,
 \end{equation}
+where $N$ is the total number of atoms, $g_{j}(r)$ is the individual atomic radial distribution function, $g_{expt}$ is the experimental radial distribution function, $w_{PDF}$ is the weight of the PDF data, and $w_{L}$ is the weight of the self-similarity restraint. The self-similiarity is evaluated using the smooth overlap of atomic positions (SOAP) descriptor. This descriptor compares two atomic densities $\rho_{i}$ and $\rho_{j}$ over all rotations $\hat{R}$ and all positions $\vec{r}$:
+\begin{equation}
+k_{ij} = \int d \hat{R} \Bigg|\int d\vec{r}\rho_{i}(\vec{r})\rho_{j}(\vec{r})(\hat{R}\vec{r})\Bigg|^{2} \qquad .
+\end{equation}
+The authors also introduced an adaptive weighting scheme to confirm both self-similarity and PDF data contributed equally throughout the refinement. This was introduced as a scaling factor
+\begin{equation}
+A=\bigg(\frac{w_{PDF}\chi_{PDF}}{w_{L}\chi_{L}}\bigg)^{0.25} \qquad ,
+\end{equation}
+multiplied by the previous PDF weight and divided by the previous self-similarity rate. The results of this weighting scheme are shown in Fig. YYY. 
 
 \begin{figure}[H]
+	\includegraphics[width=0.35\textwidth]{white1}
 	\centering
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{lee1}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{sholl1}
-		\centering
-	\end{minipage}
-	\caption{Energy schematic \cite{Lee2012} (left) and Jacob's ladder depiction \cite{Sholl2009} of various functionals.}
+	\caption{Evolution of weighting scheme used by White et al. \cite{White2014}.}
 \end{figure}
-Meta-GGA, also referred to as hybrid functionals, combine Hartree Fock with DFT functionals. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
-
-\subsection{Photoluminescence in amorphous perovskites}
-\begin{figure}[h]
-	\includegraphics[width=0.6\textwidth]{longo3}
-	\centering
-	\caption{UV-visible absorbance spectra for crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ films from Longo et al. \cite{Longo2004}} 
-\end{figure}
-Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminescence in their amorphous titanates. They chose  crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ (BST) for computational analysis using the B3LYP functional. From x-ray absorption near edge spectra (XANES), they determined the amorphous titanates contained both fivefold and sixfold oxygen-titanium coordination. In order to create this coordination, they shifted the Ti atom by 0.5 $\AA$, as shown in Fig. YYY. From the band gap in Fig. YYY, the indirect bandgap in crystalline BST is equal to 3.78 eV, in agreement with the optical bandgap found in experiment (Figure. YYY). For amorphous BST, this indirect bandgap decreases to 3.06 eV. The LDOS in Fig. YYY show the valence band is made up of O states while the conduction band is made of Ti states. The authors note covalent bonding occurs between Ti and O, through the overlap of Ti 3d states and O 2p states. The nature of the bonding is further realized in Fig. YYY(a). A  valley exists in the surface plot between Ba and Sr, indicating ionic bonding. Conversely, the charge density between Ti and O is higher and can additionall by seen in the contour map as exhibiting regions of the same charge. These characteristics point to covalent bonding. Fig. YYY(b) emphasizes the distinction between the Ti-O bonds in crystalline an amorphous BST: the covalent bonds are weaker in amorphous BST as the contour map shows reduced regions of the same charge density. These results suggest that the change in the Urbach tail of the absorption spectra is due to the disorder in the amorphous structure which leads to localized states in the O 2p orbitals.
-\begin{figure}[H]
-	\centering
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{longo1}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=0.82\textwidth]{longo2}
-		\centering
-	\end{minipage}
-	\caption{Calculated band structure (left) and density of states (right) from Longo et al. \cite{Longo2004} for crystalline (top) and amorphous (bottom) Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$.}
-\end{figure}
-
-
 
 \begin{figure}[H]
+	\includegraphics[width=0.6\textwidth]{white2}
 	\centering
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{longoA}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=0.95\textwidth]{longoB}
-		\centering
-	\end{minipage}
-	\caption{Charge density from surface and contour plots from Longo et al. \cite{Longo2004} for crystalline and amorphous  Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$. (a) shows the vertical diagonal plane and (b) shows a horizontal plane.}
+	\caption{Electronic density of states calculated from the (a) tight-binding model and the (b) MBJ meta-GGA functional for a-Si by White et al. \cite{White2014}. The density of states for unrestrained RMC is shown for comparison.}
 \end{figure}
 
-\par
+\par 
+After obtaining the a-Si structure from L-constrained RMC, DFT calculations using the tight binding model were performed to obtain the electronic structure shown in Fig. YYY. The unconstrained RMC DOS is rather featureless, while L-constrained RMC qualitatively reproduces the results of WWW. The authors double checked their results with the MBJ meta-GGA functional, known to accurately reproduce electronic properties of semiconductors, to confirm the results of their tight-binding model. Relaxation led to a slight deviation from the PDF data through the elimination of dangling-bond defects and, in turn, reduction in the density of gap states. Overall, this study demonstrates the utility in using simplity constraints on atomic relaxation.
 
-Though the band gap results of Longo et al. agree well with their experimental data, the structure they modeled is not entirely amorphous. Due to their small unit cell of 1 $\times$ 1 $\times$ 2, this creates a periodic structure in which half of the Ti have distorted local bonding. If there were greater distribution of bond lengths and types, it is likely further details in the photoluminescence mechanism could be unearthed.
-\par
 
-Additionally, the B3LYP is a partially empirical functional \cite{Paier2007}. Due to the fixed nature of empirical potentials, this method may struggle in accurately representing the system if the system exhibits any anisotropy \cite{Hohl1991}. Paier et al. \cite{Paier2007} have shown that B3LYP performs poorly for metals and small gap semiconductors, which would be better described with nonempirical hybrid functionals such as PBE0 and HSE03. At the high computational cost of a hybrid functional, a nonempirical functioanl may be better suited for this study.
+
+
 
 
 
@@ -235,7 +282,13 @@ Raty et al. additionally calculated the changes in the electronic and optical ba
 	\caption{Results from Raty et al. \cite{Raty2015} for (a) experimental absorption from photothermal deflection spectroscopy (PDS) and (b) calculated absorption oscillator strength for melt-quenched GeTe (green), substituted a-GeSe (pink), and substituted a-Sn-Te (violet). } 
 \end{figure}
 
-\subsection{Example AIMD melt-quench run}
+
+
+
+
+
+\section{Discussion}
+
 
 \section{Conclusion}
 know when your methods fail
@@ -268,51 +321,6 @@ know when your methods fail
 	\item even carefully constructed empirical potentials have difficulty in highly anisotropic covalent systems such as group-IVA elements.
 	\item AIMD avoids parameterization of interatomic forces common in MD
 \end{itemize}
-
-\underline{Raty 2015 \cite{Raty2015}} - Aging in Phase Change Materials (dots figure)
-\par
-\begin{itemize}
-	\item Motivation
-	\begin{itemize}
-		\item "Amorphous materials are out of thermodynamic equilibrium"
-		\item subject to physical aging
-		\item phase-change materials (PCMs) have a fast, reversible switch between a conductive crystalline and more resistive amorphous phase
-		\item aging increases the resistivity - `resistance drift'
-		\item computer simulation to investigate relaxation processes
-		\item \textbf{Modeling comment:} complexity of the chemistry requires DFT to describe and understand bonding and the amorphous phase
-	\end{itemize}
-	\item Literature
-	\begin{itemize}
-		\item DFT simulations of GeSbTe alloys report many tetrahedrally bonded Ge, which does not exist in crystal. These are obtained from MQ calcs
-	\end{itemize}
-	\item Methods
-	\begin{itemize}
-		\item Car-Parrinello
-		\item \textbf{To circumvent time scale problem, generated collection of a-structures}
-		\item mixed Gaussian/plane wave code in CP2K
-		\item cutoff 300 Ry
-		\item sampled at gamma only
-		\item annealed using plane-wave code in Quantum Espresso
-		\item 34 Ry
-		\item 3.84 fs
-		\item Berendsen thermostat
-		\item 10 models produced starting from liquid
-	\end{itemize}	
-	\item Results
-	\begin{itemize}
-		\item Ge$^{T}$ is associated with homopolar Ge-Ge bonds
-		\item heat of formaion shows homopolar bonds more favorable in GeTe than GeSe and SnTe
-		\item wanted to investigate effects of varying amounts Ge-Ge bonds
-		\item used different alloys along the phase diagram and substituted with Ge or Te to form different GeTe structures "mimicking aging"
-		\item homopolar bonds correlated with tetrahedral Ge
-		\item freezing at density of amorphous GeTe, tetrahedral rich models had the largest values of stress
-		\item this agrees with experiments showing the drift of PCMS is accompanied by stress relief
-		\item order parameter $d_{4}/d_{0}$ goes from tetrahedrally bonded Ge, $Ge^{T}$, to $Ge^{III}$ and $d_{3}/d_{0}$ goes from $Te^{II}$ to $Te^{III}$
-		\item increase in band gap directly linked to decrease in homopolar bonds
-		\item "melt-quenched model has a smaller band gap and possesses a (localized) mid-gap state"
-	\end{itemize}	
-\end{itemize}
-
 
 
 \section*{References}

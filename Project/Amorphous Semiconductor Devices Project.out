@@ -1,14 +1,13 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Why model amorphous semiconductors?}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{How can we model amorphous semiconductors?}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{Field Theory}{}% 4
-\BOOKMARK [1][-]{section.3}{Monte Carlo}{}% 5
-\BOOKMARK [1][-]{section.4}{Molecular Dynamics}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{MD for the structure of alumina}{section.4}% 7
-\BOOKMARK [1][-]{section.5}{Density Functional Theory}{}% 8
-\BOOKMARK [2][-]{subsection.5.1}{Photoluminescence in amorphous perovskites}{section.5}% 9
-\BOOKMARK [1][-]{section.6}{Ab intio Molecular Dynamics}{}% 10
-\BOOKMARK [2][-]{subsection.6.1}{AIMD for Phase Change Memory}{section.6}% 11
-\BOOKMARK [2][-]{subsection.6.2}{Example AIMD melt-quench run}{section.6}% 12
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 13
-\BOOKMARK [2][-]{subsection.7.1}{AIMD}{section.7}% 14
+\BOOKMARK [1][-]{section.2}{First Principles}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Photoluminescence in amorphous perovskites}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Molecular Dynamics}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{MD for the structure of alumina}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Monte Carlo}{}% 8
+\BOOKMARK [1][-]{section.5}{Ab intio Molecular Dynamics}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{AIMD for Phase Change Memory}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 11
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 12
+\BOOKMARK [2][-]{subsection.7.1}{AIMD}{section.7}% 13
