@@ -6,45 +6,45 @@ Database file #1: amorph.bib
 Warning--empty publisher in Sholl2009
 Warning--empty journal in Perdew1996
 Warning--empty journal in White2014
-You've used 13 entries,
+You've used 14 entries,
             2937 wiz_defined-function locations,
-            790 strings with 8566 characters,
-and the built_in function-call counts, 4387 in all, are:
-= -- 418
-> -- 184
+            799 strings with 8810 characters,
+and the built_in function-call counts, 4735 in all, are:
+= -- 458
+> -- 191
 < -- 0
-+ -- 70
-- -- 57
-* -- 416
-:= -- 637
-add.period$ -- 22
-call.type$ -- 13
-change.case$ -- 11
++ -- 73
+- -- 59
+* -- 448
+:= -- 684
+add.period$ -- 24
+call.type$ -- 14
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 117
-empty$ -- 445
-format.name$ -- 69
-if$ -- 1076
+cite$ -- 17
+duplicate$ -- 127
+empty$ -- 482
+format.name$ -- 72
+if$ -- 1164
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 64
-num.names$ -- 13
-pop$ -- 78
+int.to.str$ -- 14
+missing$ -- 16
+newline$ -- 69
+num.names$ -- 14
+pop$ -- 83
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 225
+skip$ -- 242
 stack$ -- 0
-substring$ -- 202
-swap$ -- 40
+substring$ -- 227
+swap$ -- 44
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 33
-width$ -- 15
-write$ -- 134
+while$ -- 36
+width$ -- 16
+write$ -- 145
 (There were 3 warnings)

@@ -104,4 +104,13 @@ J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,
   {\path{doi:10.1038/ncomms8467}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1038/ncomms8467}
 
+\bibitem{DePablo2007}
+J.~J. {De Pablo}, W.~A. Curtin,
+  \href{https://doi.org/10.1557/mrs2007.187}{{Multiscale Modeling in Advanced
+  Materials Research: Challenges, Novel Methods, and Emerging Applications}},
+  MRS Bulletin 32 (2007) 905--911.
+\newblock \href {http://dx.doi.org/10.1557/mrs2007.187}
+  {\path{doi:10.1557/mrs2007.187}}.
+\newline\urlprefix\url{https://doi.org/10.1557/mrs2007.187}
+
 \end{thebibliography}

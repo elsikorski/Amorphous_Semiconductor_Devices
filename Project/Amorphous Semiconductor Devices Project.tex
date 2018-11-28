@@ -33,14 +33,15 @@ We examine four computational methods applicable to amorphous materials: Density
 \end{frontmatter}
 \tableofcontents
 \section{Introduction}
-Computational modeling can greatly assist experimental studies of materials. When starting from experiment, modeling can help determine the mechanism of a process or the structure of a material. When starting from computation, modeling can screen an array of materials to predict which will yield the best properties.
-\par
-Computational modeling spans length scales from the order of meters, that we experience, to the order of \aa ngstr\"oms, that atoms experience. Due to this vast range of length scales, no one method can address all properties. Following, computational methods are broken down into four main categories (\textbf{Fig. 1}): First principles or \textit{ab initio}, molecular dynamics (MD), mesoscale methods such as Monte Carlo (MC), and continuum methods such as finite element analysis (FEA)\cite{Lee2012}. This review focuses on the lower three: first principles, MD, and MC, which can be used to find the structure of amorphous materials. Density of states is an inherently electronic calculation, and as such can only be calculated from first principles. We will additionally study \textit{Ab initio} Molecular Dynamics, a combination of the lower two length scales, which we will see is particularly useful for amorphous materials. For each method, we discuss the theory and an example of its application for amorphous materials. Our examples will include determining the structural and electronic origin of photoluminescence in amorphous perovskites, determining the basic units of amorphous alumina, finding the structure of a-Si using diffraction results, and probing the mechanism of aging in phase change materials. Lastly, we will discuss the benefits and drawbacks of each method, how to select a method,  and what considerations must be taken into  account in a computational study.
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[width=0.5\textwidth]{overview}
 	\centering
 	\caption{Overview of computational methods with respect to time and size capabilities. \cite{Lee2012}}
 \end{figure}
+Computational modeling can greatly assist experimental studies of materials. When starting from experiment, modeling can help determine the mechanism of a process or the structure of a material. When starting from computation, modeling can screen an array of materials to predict which will yield the best properties.
+\par
+Computational modeling spans length scales from the order of meters, that we experience, to the order of \aa ngstr\"oms, that atoms experience. Due to this vast range of length scales, no one method can address all properties. Following, computational methods are broken down into four main categories (\textbf{Fig. 1}): First principles or \textit{ab initio}, molecular dynamics (MD), mesoscale methods such as Monte Carlo (MC), and continuum methods such as finite element analysis (FEA)\cite{Lee2012}. This review focuses on the lower three: first principles, MD, and MC, which can be used to find the structure of amorphous materials. Density of states is an inherently electronic calculation, and as such can only be calculated from first principles. We will additionally study \textit{Ab initio} Molecular Dynamics, a combination of the lower two length scales, which we will see is particularly useful for amorphous materials. For each method, we discuss the theory and an example of its application for amorphous materials. Our examples will include determining the structural and electronic origin of photoluminescence in amorphous perovskites, determining the basic units of amorphous alumina, finding the structure of a-Si using diffraction results, and probing the mechanism of aging in phase change materials. Lastly, we will discuss the benefits and drawbacks of each method, how to select a method,  and what considerations must be taken into  account in a computational study.
+
 
 
 
@@ -67,32 +68,34 @@ where $\epsilon_{i}$ are the Kohn-Sham eigenvalues. The electron density is then
 \begin{equation}
 \rho (r) = \sum_{i}|\phi _{i}(r)|^{2} \qquad.
 \end{equation}
-The third term of the Hamiltonian, the potential energy between electrons, is split into Hartree energy and exchange-correlation energy. The Hartree energy is  the potential felt on each electron by a homogeneous electron gas of all the other electrons. Exchange energy describes the interaction of same spin electrons and correlation energy describes the interaction of different spin electrons. Though exchange-correlation energy is small in magnitude compared to the other energetic terms, it is directly linked to the accuracy of the method, as shown in Fig. YYY. 
+The third term of the Hamiltonian, the potential energy between electrons, is split into Hartree energy and exchange-correlation energy. The Hartree energy is  the potential felt on each electron by a homogeneous electron gas of all the other electrons. Exchange energy describes the interaction of same spin electrons and correlation energy describes the interaction of different spin electrons. Though exchange-correlation energy is small in magnitude compared to the other energetic terms, it is directly linked to the accuracy of the method, as shown in \textbf{Fig. 2}. 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{lee1}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{sholl1}
+		\includegraphics[width=0.8\textwidth]{sholl1}
 		\centering
 	\end{minipage}
 	\caption{Energy schematic \cite{Lee2012} (left) and Jacob's ladder depiction \cite{Sholl2009} of various functionals.}
 \end{figure}
 
-Three main categories of exchange-correlation functionals are the Local Density Approximation (LDA), Generalized Gradient Approximation (GGA), and hybrid functionals. Hybrid functionals, also referred to as meta-GGA , combine Hartree Fock with DFT functionals. Perdew, of PBE - a revision to GGA \cite{Perdew1996}, introduced the analogy of the Jacob's ladder in Fig. YYY. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
+Three main categories of exchange-correlation functionals are the Local Density Approximation (LDA), Generalized Gradient Approximation (GGA), and hybrid functionals. Hybrid functionals, also referred to as meta-GGA , combine Hartree Fock with DFT functionals. Perdew, of PBE - a revision to GGA \cite{Perdew1996}, introduced the analogy of the Jacob's ladder in \textbf{Fig. 2}. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
 \par 
 
-DFT runs using an iterative self-consistent framework shown in Fig. YYY. First, an electron density is created using the superposition of the pseudopotentials (mathematically simplified functions resulting from freezing core electrons with the nucleus) of each atom. Second, calculate the terms of the Kohn-Sham Hamiltonian and use the electron density to solve the exchange-correlation functional.  Third, solve the Kohn-Sham equations through direct diagonalization to obtain the Kohn-Sham orbitals. Fourth, use the new orbitals to solve for the electron density. Repeat this process until the difference in energy between calculations reaches a predetermined stopping criteria. Once the energy converges, update the nuclei positions and repeat the iterative process. The method continues until energy differences between subsequent nuclei positions reaches the stopping criteria. 
+DFT runs using an iterative self-consistent framework shown in\textbf{ Fig. 3}. First, an electron density is created using the superposition of the pseudopotentials (mathematically simplified functions resulting from freezing core electrons with the nucleus) of each atom. Second, calculate the terms of the Kohn-Sham Hamiltonian and use the electron density to solve the exchange-correlation functional.  Third, solve the Kohn-Sham equations through direct diagonalization to obtain the Kohn-Sham orbitals. Fourth, use the new orbitals to solve for the electron density. Repeat this process until the difference in energy between calculations reaches a predetermined stopping criteria. Once the energy converges, update the nuclei positions and repeat the iterative process. The method continues until energy differences between subsequent nuclei positions reaches the stopping criteria. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{scf}
 	\centering
 	\caption{Self-consistent framework (SFC) loop used in DFT \cite{Lee2012}.} 
 \end{figure}
+
+Once the system converges, the output wave functions and electron densities can be used to calculate electronic properties such as the Density of States (DOS). The density of states is found by integrating the electron density in reciprocal space \cite{Sholl2009}. This can further be broken down into the density of states on each atom referred to as the Local Density of States (LDOS) and in each orbital referred to as the Projected Density of States (PDOS).
 
 
 \subsection{Photoluminescence in amorphous perovskites}
@@ -101,7 +104,17 @@ DFT runs using an iterative self-consistent framework shown in Fig. YYY. First, 
 	\centering
 	\caption{UV-visible absorbance spectra for crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ films from Longo et al. \cite{Longo2004}} 
 \end{figure}
-Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminescence in their amorphous titanates. They chose  crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ (BST) for computational analysis using the B3LYP functional. From x-ray absorption near edge spectra (XANES), they determined the amorphous titanates contained both fivefold and sixfold oxygen-titanium coordination. In order to create this coordination, they shifted the Ti atom by 0.5 $\AA$, as shown in Fig. YYY. From the band gap in Fig. YYY, the indirect bandgap in crystalline BST is equal to 3.78 eV, in agreement with the optical bandgap found in experiment (Figure. YYY). For amorphous BST, this indirect bandgap decreases to 3.06 eV. The LDOS in Fig. YYY show the valence band is made up of O states while the conduction band is made of Ti states. The authors note covalent bonding occurs between Ti and O, through the overlap of Ti 3d states and O 2p states. The nature of the bonding is further realized in Fig. YYY(a). A  valley exists in the surface plot between Ba and Sr, indicating ionic bonding. Conversely, the charge density between Ti and O is higher and can additionall by seen in the contour map as exhibiting regions of the same charge. These characteristics point to covalent bonding. Fig. YYY(b) emphasizes the distinction between the Ti-O bonds in crystalline an amorphous BST: the covalent bonds are weaker in amorphous BST as the contour map shows reduced regions of the same charge density. These results suggest that the change in the Urbach tail of the absorption spectra is due to the disorder in the amorphous structure which leads to localized states in the O 2p orbitals.
+
+
+Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminescence in their amorphous titanates. They chose  crystalline and amorphous Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$ (BST) for computational analysis using the B3LYP functional. From x-ray absorption near edge spectra (XANES), they determined the amorphous titanates contained both fivefold and sixfold oxygen-titanium coordination. In order to create this coordination, they shifted the Ti atom by 0.5 $\AA$, as shown in \textbf{Fig. 6}. From the band gap in \textbf{Fig. 5}, the indirect bandgap in crystalline BST is equal to 3.78 eV, in agreement with the optical bandgap found in experiment (\textbf{Fig. 4}). For amorphous BST, this indirect bandgap decreases to 3.06 eV. The LDOS in \textbf{Fig. 5} show the valence band is made up of O states while the conduction band is made of Ti states. The authors note covalent bonding occurs between Ti and O, through the overlap of Ti 3d states and O 2p states. The nature of the bonding is further realized in \textbf{Fig. 6(a)}. A  valley exists in the surface plot between Ba and Sr, indicating ionic bonding. Conversely, the charge density between Ti and O is higher and can additionall by seen in the contour map as exhibiting regions of the same charge. These characteristics point to covalent bonding.\textbf{ Fig. 6(b)} emphasizes the distinction between the Ti-O bonds in crystalline an amorphous BST: the covalent bonds are weaker in amorphous BST as the contour map shows reduced regions of the same charge density. These results suggest that the change in the Urbach tail of the absorption spectra is due to the disorder in the amorphous structure which leads to localized states in the O 2p orbitals.
+
+\par
+
+Though the band gap results of Longo et al. agree well with their experimental data, the structure they modeled is not entirely amorphous. Due to their small unit cell of 1 $\times$ 1 $\times$ 2, this creates a periodic structure in which half of the Ti have distorted local bonding. If there were greater distribution of bond lengths and types, it is likely further details in the photoluminescence mechanism could be unearthed.
+\par
+
+Additionally, the B3LYP is a partially empirical functional \cite{Paier2007}. Due to the fixed nature of empirical potentials, this method may struggle in accurately representing the system if the system exhibits any anisotropy \cite{Hohl1991}. Paier et al. \cite{Paier2007} have shown that B3LYP performs poorly for metals and small gap semiconductors, which would be better described with nonempirical hybrid functionals such as PBE0 and HSE03. At the high computational cost of a hybrid functional, a nonempirical functional may be better suited for such a study.
+
 \begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{0.45\textwidth}
@@ -114,9 +127,6 @@ Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminesce
 	\end{minipage}
 	\caption{Calculated band structure (left) and density of states (right) from Longo et al. \cite{Longo2004} for crystalline (top) and amorphous (bottom) Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$.}
 \end{figure}
-
-
-
 \begin{figure}[H]
 	\centering
 	\begin{minipage}[b]{0.45\textwidth}
@@ -129,15 +139,6 @@ Longo et al. \cite{Longo2004} used DFT to determine the origin of photoluminesce
 	\end{minipage}
 	\caption{Charge density from surface and contour plots from Longo et al. \cite{Longo2004} for crystalline and amorphous  Ba$_{0.5}$Sr$_{0.5}$TiO$_{3}$. (a) shows the vertical diagonal plane and (b) shows a horizontal plane.}
 \end{figure}
-
-\par
-
-Though the band gap results of Longo et al. agree well with their experimental data, the structure they modeled is not entirely amorphous. Due to their small unit cell of 1 $\times$ 1 $\times$ 2, this creates a periodic structure in which half of the Ti have distorted local bonding. If there were greater distribution of bond lengths and types, it is likely further details in the photoluminescence mechanism could be unearthed.
-\par
-
-Additionally, the B3LYP is a partially empirical functional \cite{Paier2007}. Due to the fixed nature of empirical potentials, this method may struggle in accurately representing the system if the system exhibits any anisotropy \cite{Hohl1991}. Paier et al. \cite{Paier2007} have shown that B3LYP performs poorly for metals and small gap semiconductors, which would be better described with nonempirical hybrid functionals such as PBE0 and HSE03. At the high computational cost of a hybrid functional, a nonempirical functioanl may be better suited for such a study.
-
-
 \section{Molecular Dynamics}
 \subsection{Formulation of Molecular Dynamics}
 Molecular Dynamics (MD) is a classical method built off of
@@ -158,7 +159,7 @@ U_{ij}(r) = 4\epsilon \Bigg[\bigg(\frac{\sigma}{r}\bigg)^{12}-\bigg(\frac{\sigma
 \end{equation}
 where $\epsilon$ is the depth of the energy well and $\sigma$ is the interatomic distance at which the potential is zero. However, this potential can only describe the interactions between atoms of the same element. In order to perform calculations on the majority of systems of interest, more complex pair-potentials are needed. Numerous potentials have been created, such as Embedded Atom Method (EAM) potentials which work for many metals and Tersoff potentials for covalent solids. 
 \par 
-An alternative method necessary for our discussion of AIMD in Section YYY is the Lagrangian:
+An alternative method necessary for our discussion of AIMD in Section 5.1 is the Lagrangian:
 \begin{equation}
 L = K-U = \frac{1}{2}\sum_{i=1}^{3N}m_{i}v^{2}_{i}-U(r_{1}, \cdots, r_{3N})\qquad ,
 \end{equation}
@@ -192,7 +193,7 @@ To perform statistical analysis of the structure, properties were averaged over 
 	\end{minipage}
 \end{figure}
 \par 
-When compared with experimental structure factor, the results are in general agreement (Figure YYY). Though at low $q$ the results do not quite align, the simulation still shows a ``prepeak," consistent with experiment. From the bond-angle distribution shown in Figure YYY, the authors determined two structural motifs, as shown in Figure YYY.
+When compared with experimental structure factor, the results are in general agreement (\textbf{Fig. 7}). Though at low $q$ the results do not quite align, the simulation still shows a ``prepeak," consistent with experiment. From the bond-angle distribution shown in \textbf{Fig. 8}, the authors determined two structural motifs, as shown in \textbf{Fig. 9}.
 %rings, gamma-alumina
 
 
@@ -212,7 +213,7 @@ The authors also introduced an adaptive weighting scheme to confirm both self-si
 \begin{equation}
 A=\bigg(\frac{w_{PDF}\chi_{PDF}}{w_{L}\chi_{L}}\bigg)^{0.25} \qquad ,
 \end{equation}
-multiplied by the previous PDF weight and divided by the previous self-similarity rate. The results of this weighting scheme are shown in Fig. YYY. 
+multiplied by the previous PDF weight and divided by the previous self-similarity rate. The results of this weighting scheme are shown in \textbf{Fig. 10}. 
 
 \begin{figure}[H]
 	\includegraphics[width=0.35\textwidth]{white1}
@@ -227,7 +228,7 @@ multiplied by the previous PDF weight and divided by the previous self-similarit
 \end{figure}
 
 \par 
-After obtaining the a-Si structure from L-constrained RMC, DFT calculations using the tight binding model were performed to obtain the electronic structure shown in Fig. YYY. The unconstrained RMC DOS is rather featureless, while L-constrained RMC qualitatively reproduces the results of WWW. The authors double checked their results with the MBJ meta-GGA functional, known to accurately reproduce electronic properties of semiconductors, to confirm the results of their tight-binding model. Relaxation led to a slight deviation from the PDF data through the elimination of dangling-bond defects and, in turn, reduction in the density of gap states. Overall, this study demonstrates the utility in using simplity constraints on atomic relaxation.
+After obtaining the a-Si structure from L-constrained RMC, DFT calculations using the tight binding model were performed to obtain the electronic structure shown in \textbf{Fig. 11}. The unconstrained RMC DOS is rather featureless, while L-constrained RMC qualitatively reproduces the results of WWW. The authors double checked their results with the MBJ meta-GGA functional, known to accurately reproduce electronic properties of semiconductors, to confirm the results of their tight-binding model. Relaxation led to a slight deviation from the PDF data through the elimination of dangling-bond defects and, in turn, reduction in the density of gap states. Overall, this study demonstrates the utility in using simplity constraints on atomic relaxation.
 
 
 
@@ -249,15 +250,15 @@ After obtaining the a-Si structure from L-constrained RMC, DFT calculations usin
 \section{\emph{Ab intio} Molecular Dynamics}
 \subsection{Formulation of \emph{Ab initio} Molecular Dynamics}
 \emph{Ab initio} Molecular Dynamics (AIMD) greatly extends the capabilities of both methods by advancing atoms along classical trajectories based on forces calculated from DFT\cite{Sholl2009}.
-This is an incredibly powerful method that adds time treatment to DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in Figure YYY. Instead of performing AIMD as a stepwise process in which calculating the atomic trajectories and the electronic ground state are separate, Car and Parinello formulated the two to run simultaneously. Their extended Lagrangian introduces the electronic degrees of freedom as fictitious dynamical variables:
+This is an incredibly powerful method that adds time treatment to DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in \textbf{Fig. 12}. Instead of performing AIMD as a stepwise process in which calculating the atomic trajectories and the electronic ground state are separate, Car and Parinello formulated the two to run simultaneously. Their extended Lagrangian introduces the electronic degrees of freedom as fictitious dynamical variables:
 \begin{equation}
 L =\frac{1}{2}\sum_{i=1}^{3N}m_{i}v^{2}_{i}-U(r_{1}, \cdots, r_{3N})+\frac{1}{2}\sum_{j}2\mu \int d\vec{r}|\dot{\psi}(\vec{r})|^{2}+L_{ortho}
 \end{equation}
-The third term introduces fictitious mass, $\mu$, and the final term restrains the one-electron wave functions to be orthogonal. Since the total energy calculation occurs simultaneously with the atomic trajectory calculation, the energy is not quite the same as the energy calculated with pure DFT, as shown in Figure YYY. This phenemona circumvents the structure getting trapped in a metastable state, as DFT methods are known to do \cite{Dorado2013}.
+The third term introduces fictitious mass, $\mu$, and the final term restrains the one-electron wave functions to be orthogonal. Since the total energy calculation occurs simultaneously with the atomic trajectory calculation, the energy is not quite the same as the energy calculated with pure DFT, as shown in \textbf{Fig. 12}. This phenemona circumvents the structure getting trapped in a metastable state, as DFT methods are known to do \cite{Dorado2013}.
 \begin{figure}[h]
 	\includegraphics[width=0.5\textwidth]{practical1}
 	\centering
-	\caption{} 
+	\caption{Schematic of Car-Parrinello MD trajectory along a single coordinate \cite{Sholl2009}. The smooth curve gives the exact electronic ground state energy, while the circles show the electronic energy calculated by Car-Parrinello MD at each step of the MD simulation.} 
 \end{figure}
 
 \par
@@ -273,15 +274,16 @@ Their study begins with the observation that AIMD simulations of Ge$_{x}$Sb$_{y}
 	\caption{Results from Raty et al. \cite{Raty2015} for (a) the energy difference per atom, fraction of homopolar GeGe bonds, and stress of the melt-quenching of GeTe (green) and chemical replacement systems SnTe (violet), GeSe (pink), and SiTe (grey). (b-d) show the atomic configurations of GeTe as labeled in the energy difference plot. Te, tetrahedral Ge, and octahedral Ge are rendered in blue, red, and orange, respectively.} 
 \end{figure}
 \par 
-The results shown in Figure. YYY indicate that the homopolar bonds reduce the stability of the system. However, homopolar bonds have a lower heat of formation in GeTe than in both GeSe and SnTe, and the melt-quench process is able to stabilize these tetrahedral motifs. In comparison to experiment, aging of phase change materials has been linked with stress relief. These results suggest that the removal of homopolar bonds contributes to this stress relief.
+The results shown in \textbf{Fig. 13(a)} indicate that the homopolar bonds reduce the stability of the system. However, homopolar bonds have a lower heat of formation in GeTe than in both GeSe and SnTe, and the melt-quench process is able to stabilize these tetrahedral motifs. In comparison to experiment, aging of phase change materials has been linked with stress relief. These results suggest that the removal of homopolar bonds contributes to this stress relief.
 \par 
-Raty et al. additionally calculated the changes in the electronic and optical bandgaps due to the changes in percent Ge$^{T}$. Though methods of calculating optical properties are beyond the scope of this review, the results of Raty et al. for the optical bandgap in Figures. YYY(a) and YYY show increasing band gap correlated with decreasing homopolar bonds, in agreement with experiment showing band gap widening with aging. Similarly, the DOS shows an increase in electronic band gap with aging, and the disappearance of the midgap states are directly linked to the removal of homopolar bonds. The authors note that while a variety of Ge$^T$ concentrations have been modeled, this method does not yield access to the time scale of the relaxation process. 
-\begin{figure}[h]
+Raty et al. additionally calculated the changes in the electronic and optical bandgaps due to the changes in percent Ge$^{T}$. Though methods of calculating optical properties are beyond the scope of this review, the results of Raty et al. for the optical bandgap in \textbf{Fig. 14(a)} and \textbf{Fig. 15} show increasing band gap correlated with decreasing homopolar bonds, in agreement with experiment showing band gap widening with aging. Similarly, the DOS shows an increase in electronic band gap with aging, and the disappearance of the midgap states are directly linked to the removal of homopolar bonds. The authors note that while a variety of Ge$^T$ concentrations have been modeled, this method does not yield access to the time scale of the relaxation process. 
+\begin{figure}[H]
 	\includegraphics[width=0.5\textwidth]{raty2}
 	\centering
-	\caption{Results from Raty et al. \cite{Raty2015} for (a) the relaxed amorphous GeTe structures as a function of percent Ge$^{T}$} and (b) the local density of states for melt-quenched GeTe (green) and substituted a-SnTe (violet).
+	\caption{Results from Raty et al. \cite{Raty2015} for (a) the relaxed amorphous GeTe structures as a function of percent Ge$^{T}$ and (b) the local density of states for melt-quenched GeTe (green) and substituted a-SnTe (violet).}
 \end{figure}
-\begin{figure}[h]
+
+\begin{figure}[H]
 	\includegraphics[width=0.3\textwidth]{raty3}
 	\centering
 	\caption{Results from Raty et al. \cite{Raty2015} for (a) experimental absorption from photothermal deflection spectroscopy (PDS) and (b) calculated absorption oscillator strength for melt-quenched GeTe (green), substituted a-GeSe (pink), and substituted a-Sn-Te (violet). } 
@@ -306,8 +308,10 @@ Selecting a method requires a clear definition of the system and project goals. 
 
 
 
-\section{Conclusion}
-We have examined four computational methods applicable to amorphous materials: DFT, AIMD, MD, and MC.
+\section{Conclusions}
+We have examined four computational methods applicable to amorphous materials: DFT, AIMD, MD, and MC. DFT has been used to identify the structure leading to photoluminescence in amorphous perovskites \cite{Longo2004}. As Ti shifts to create five- and six-fold coordination, this creates localized states on the O that subsequently reduce the band gap. Electronic structure results show the indirect and direct band gap values and the density of states for each atom. Partial charge density was used to visualize the electronic structure and identify ionic and covalent bonding. 
+MD has been used to determine the statistical bond angles present in amorphous alumina, providing insight on the structural motifs present \cite{Gutierrez2002}. Reverse Monte Carlo was used to show the positive results from preferring simplicity and the additional details this can lead to in the electronic properties \cite{Cliffe2017}. AIMD has been used to find the relation between homopolar bonds and aging, altering both electronic and optical properties \cite{Raty2015}.
+\par Though no one method can describe all length and time scales, each as strengths in different areas. When selecting a method for study, one should carefully consider their system and the needs of their study. Once a method is chosen appropriately, it can be used to find structures and mechanisms unattainable through experiment. Also, while such examples were not discussed here, computational methods can  be used to screen prospective materials to predict which will yield the best properties. Multiscale modeling or coupling of methods across length scales, has gained increasing attention for holistically describing materials \cite{DePablo2007}. Such an endeavor may one day benefit amorphous materials. By using computation, amorphous materials can be better understood.
 
 
 

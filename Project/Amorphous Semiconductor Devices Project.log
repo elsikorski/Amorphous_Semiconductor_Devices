@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 NOV 2018 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 NOV 2018 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,257 +469,251 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 \tf@toc=\write5
 \openout5 = `"Amorphous Semiconductor Devices Project.toc"'.
 
- [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<overview.png, id=81, 859.21pt x 698.61pt>
+<overview.png, id=69, 859.21pt x 698.61pt>
 File: overview.png Graphic file (type png)
  <use overview.png>
-Package pdftex.def Info: overview.png used on input line 40.
+Package pdftex.def Info: overview.png used on input line 37.
 (pdftex.def)             Requested size: 234.0pt x 190.25818pt.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+ [1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTe
+X warning (ext4): destination with the same identifier (name{figure.1}) has bee
+n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 \par
+l.51 \par
           <./overview.png>] <lee1.png, id=92, 394.47375pt x 296.10625pt>
 File: lee1.png Graphic file (type png)
 
 <use lee1.png>
-Package pdftex.def Info: lee1.png used on input line 76.
+Package pdftex.def Info: lee1.png used on input line 77.
 (pdftex.def)             Requested size: 210.59857pt x 158.08318pt.
  <sholl1.png, id=93, 429.605pt x 433.62pt>
 File: sholl1.png Graphic file (type png)
  <use sholl1.png>
-Package pdftex.def Info: sholl1.png used on input line 80.
-(pdftex.def)             Requested size: 210.59857pt x 212.56828pt.
-
-[3] <scf.png, id=115, 543.02875pt x 580.1675pt>
-File: scf.png Graphic file (type png)
- <use scf.png>
-Package pdftex.def Info: scf.png used on input line 92.
-(pdftex.def)             Requested size: 280.80286pt x 300.01567pt.
+Package pdftex.def Info: sholl1.png used on input line 81.
+(pdftex.def)             Requested size: 168.47949pt x 170.05728pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<longo3.png, id=117, 368.37625pt x 307.1475pt>
+[3] <scf.png, id=116, 543.02875pt x 580.1675pt>
+File: scf.png Graphic file (type png)
+ <use scf.png>
+Package pdftex.def Info: scf.png used on input line 93.
+(pdftex.def)             Requested size: 280.80286pt x 300.01567pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.97 
+      <./lee1.png> <./sholl1.png>]
+<longo3.png, id=128, 368.37625pt x 307.1475pt>
 File: longo3.png Graphic file (type png)
  <use longo3.png>
-Package pdftex.def Info: longo3.png used on input line 100.
+Package pdftex.def Info: longo3.png used on input line 103.
 (pdftex.def)             Requested size: 280.80286pt x 234.12814pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 104.
+LaTeX Warning: Command \r invalid in math mode on input line 109.
 
-<longo1.png, id=120, 306.14375pt x 396.48125pt>
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.110 
+       <./scf.png>] <longo1.png, id=141, 306.14375pt x 396.48125pt>
 File: longo1.png Graphic file (type png)
- <use longo1.png>
-Package pdftex.def Info: longo1.png used on input line 108.
-(pdftex.def)             Requested size: 210.59857pt x 272.74353pt.
 
-<longo2.png, id=121, 317.185pt x 505.89pt>
+<use longo1.png>
+Package pdftex.def Info: longo1.png used on input line 121.
+(pdftex.def)             Requested size: 210.59857pt x 272.74353pt.
+ <longo2.png, id=142, 317.185pt x 505.89pt>
 File: longo2.png Graphic file (type png)
  <use longo2.png>
-Package pdftex.def Info: longo2.png used on input line 112.
+Package pdftex.def Info: longo2.png used on input line 125.
 (pdftex.def)             Requested size: 172.69237pt x 275.43826pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.116 \end{figure}
-                   <./lee1.png> <./sholl1.png>] [5pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.3}) has been already used, duplicat
-e ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.117 
-       <./scf.png>] <longoA.png, id=141, 446.66875pt x 434.62375pt>
+<longoA.png, id=145, 446.66875pt x 434.62375pt>
 File: longoA.png Graphic file (type png)
-
-<use longoA.png>
-Package pdftex.def Info: longoA.png used on input line 123.
+ <use longoA.png>
+Package pdftex.def Info: longoA.png used on input line 133.
 (pdftex.def)             Requested size: 210.59857pt x 204.9231pt.
- <longoB.png, id=142, 443.6575pt x 454.69875pt>
-File: longoB.png Graphic file (type png)
 
-<use longoB.png>
-Package pdftex.def Info: longoB.png used on input line 127.
+<longoB.png, id=146, 443.6575pt x 454.69875pt>
+File: longoB.png Graphic file (type png)
+ <use longoB.png>
+Package pdftex.def Info: longoB.png used on input line 137.
 (pdftex.def)             Requested size: 200.068pt x 205.04271pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.132 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
+l.141 \end{figure}
+                   <./longo3.png>] [7pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.132 
-       <./longo3.png> <./longo1.png> <./longo2.png>] [7pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.6}) has been already used, dup
-licate ignored
+l.146 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.153 \par
-           <./longoA.png> <./longoB.png>]
-<gutierrez3.png, id=171, 365.365pt x 277.035pt>
+l.146 \begin{equation}
+                       <./longo1.png> <./longo2.png> <./longoA.png> <./longoB.p
+ng>] <gutierrez3.png, id=169, 365.365pt x 277.035pt>
 File: gutierrez3.png Graphic file (type png)
  <use gutierrez3.png>
-Package pdftex.def Info: gutierrez3.png used on input line 173.
+Package pdftex.def Info: gutierrez3.png used on input line 174.
 (pdftex.def)             Requested size: 280.80286pt x 212.92447pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<gutierrez1.png, id=174, 437.635pt x 531.9875pt>
+[8] <gutierrez1.png, id=183, 437.635pt x 531.9875pt>
 File: gutierrez1.png Graphic file (type png)
  <use gutierrez1.png>
-Package pdftex.def Info: gutierrez1.png used on input line 184.
+Package pdftex.def Info: gutierrez1.png used on input line 185.
 (pdftex.def)             Requested size: 197.96317pt x 240.64226pt.
 
-<gutierrez2.png, id=177, 347.2975pt x 609.27625pt>
+<gutierrez2.png, id=186, 347.2975pt x 609.27625pt>
 File: gutierrez2.png Graphic file (type png)
  <use gutierrez2.png>
-Package pdftex.def Info: gutierrez2.png used on input line 189.
+Package pdftex.def Info: gutierrez2.png used on input line 190.
 (pdftex.def)             Requested size: 115.82985pt x 203.20004pt.
 
-[8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 \par
-          pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.8}) has been already used, duplicate ignored
+l.195 \par
+           <./gutierrez3.png>] [10pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 \par
-          pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.9}) has been already used, duplicate ignored
+l.209 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 \par
-           <./gutierrez3.png> <./gutierrez1.png> <./gutierrez2.png>]
-<white1.png, id=200, 645.41125pt x 495.8525pt>
+l.209 \begin{equation}
+                       <./gutierrez1.png> <./gutierrez2.png>]
+<white1.png, id=207, 645.41125pt x 495.8525pt>
 File: white1.png Graphic file (type png)
  <use white1.png>
-Package pdftex.def Info: white1.png used on input line 218.
+Package pdftex.def Info: white1.png used on input line 219.
 (pdftex.def)             Requested size: 163.80286pt x 125.8392pt.
- [10]
-<white2.png, id=210, 808.01875pt x 393.47pt>
+
+<white2.png, id=209, 808.01875pt x 393.47pt>
 File: white2.png Graphic file (type png)
  <use white2.png>
-Package pdftex.def Info: white2.png used on input line 224.
+Package pdftex.def Info: white2.png used on input line 225.
 (pdftex.def)             Requested size: 280.80286pt x 136.73793pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.10
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.253 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.11}) has been already used, duplicate ignored
+l.232 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.253 \begin{equation}
-                       <./white1.png> <./white2.png>]
+l.232 
+       <./white1.png> <./white2.png>]
 <practical1.png, id=226, 829.0975pt x 573.14125pt>
 File: practical1.png Graphic file (type png)
  <use practical1.png>
-Package pdftex.def Info: practical1.png used on input line 258.
+Package pdftex.def Info: practical1.png used on input line 259.
 (pdftex.def)             Requested size: 234.0pt x 161.75528pt.
 
-<raty1.png, id=229, 627.34375pt x 640.3925pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] <raty1.png, id=240, 627.34375pt x 640.3925pt>
 File: raty1.png Graphic file (type png)
  <use raty1.png>
-Package pdftex.def Info: raty1.png used on input line 271.
+Package pdftex.def Info: raty1.png used on input line 272.
 (pdftex.def)             Requested size: 234.0pt x 238.86652pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<raty2.png, id=243, 885.3075pt x 463.7325pt>
+File: raty2.png Graphic file (type png)
+ <use raty2.png>
+Package pdftex.def Info: raty2.png used on input line 281.
+(pdftex.def)             Requested size: 234.0pt x 122.5701pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.12
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.275 \par
-           <./practical1.png>] <raty2.png, id=242, 885.3075pt x 463.7325pt>
-File: raty2.png Graphic file (type png)
-
-<use raty2.png>
-Package pdftex.def Info: raty2.png used on input line 280.
-(pdftex.def)             Requested size: 234.0pt x 122.5701pt.
- <raty3.png, id=244, 417.56pt x 505.89pt>
+l.285 
+       <./practical1.png>] <raty3.png, id=253, 417.56pt x 505.89pt>
 File: raty3.png Graphic file (type png)
- <use raty3.png>
-Package pdftex.def Info: raty3.png used on input line 285.
+
+<use raty3.png>
+Package pdftex.def Info: raty3.png used on input line 287.
 (pdftex.def)             Requested size: 140.40143pt x 170.10138pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
-) has been already used, duplicate ignored
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.297 \par
-           <./raty1.png>] [14pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.14}) has been already used, duplicate ignored
+l.291 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.300 M
-       C can treat thousands of atoms, but like Molecular Dynamics is hinder...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
-as been already used, duplicate ignored
+l.291 
+       <./raty1.png> <./raty2.png>] [15pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.300 M
-       C can treat thousands of atoms, but like Molecular Dynamics is hinder...
- <./raty2.png> <./raty3.png>] (./Amorphous Semiconductor Devices Project.bbl
-[15]
+l.307 
+       <./raty3.png>] (./Amorphous Semiconductor Devices Project.bbl [16]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 73.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
 
 (./Amorphous Semiconductor Devices Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `"Amorphous Semiconductor Devices Project".ou
 t' has not changed.
-(rerunfilecheck)             Checksum: 747B2FAA85E92E3078B7409CB698E7B8;864.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
+(rerunfilecheck)             Checksum: 76C34ED162507F17F580ADC441693756;865.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
- 7137 strings out of 493014
- 103834 string characters out of 6133351
- 200958 words of memory out of 5000000
- 10461 multiletter control sequences out of 15000+600000
+ 7142 strings out of 493014
+ 103914 string characters out of 6133351
+ 201974 words of memory out of 5000000
+ 10464 multiletter control sequences out of 15000+600000
  41489 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,30p,1754b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,7n,30p,1793b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -732,11 +726,11 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on "Amorphous Semiconductor Devices Project.pdf" (16 pages, 4652
-249 bytes).
+Output written on "Amorphous Semiconductor Devices Project.pdf" (17 pages, 4656
+113 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
  195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
