@@ -8,26 +8,17 @@
 \bibitem{Lee2012}
 J.~G. Lee, {Computational Materials Science: An Introduction}, CRC Press, 2012.
 
-\bibitem{White2014}
-C.~E. White, N.~J. Henson, L.~L. Daemen, M.~Hartl, K.~Page,
-  \href{https://pubs.acs.org/sharingguidelines}{{Uncovering the True Atomic
-  Structure of Disordered Materials: The Structure of a Hydrated Amorphous
-  Magnesium Carbonate (MgCO 3 {\textperiodcentered}3D 2 O)}}\href
-  {http://dx.doi.org/10.1021/cm500470g} {\path{doi:10.1021/cm500470g}}.
-\newline\urlprefix\url{https://pubs.acs.org/sharingguidelines}
-
-\bibitem{Gutierrez2002}
-G.~Guti{\'{e}}rrez, B.~Johansson,
-  \href{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}{{Molecular
-  dynamics study of structural properties of amorphous Al2O3}}, Physical Review
-  B 65~(104202) (2002) 1--9.
-\newblock \href {http://dx.doi.org/10.1103/PhysRevB.65.104202}
-  {\path{doi:10.1103/PhysRevB.65.104202}}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}
-
 \bibitem{Sholl2009}
 D.~S. Sholl, J.~A. Steckel, {Density Functional Theory: A Practical
   Introduction}, 2009.
+
+\bibitem{Perdew1996}
+J.~P. Perdew, K.~Burke, M.~Ernzerhof,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.77.3865}{{Generalized
+  Gradient Approximation Made Simple}} 77~(18) (1996) 3865--3868.
+\newblock \href {http://dx.doi.org/doi.org/10.1103/PhysRevLett.77.3865}
+  {\path{doi:doi.org/10.1103/PhysRevLett.77.3865}}.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.77.3865}
 
 \bibitem{Paier2007}
 J.~Paier, M.~Marsman, G.~Kresse,
@@ -58,6 +49,31 @@ D.~Hohl, R.~O. Jones,
   {\path{doi:https://doi.org/10.1103/PhysRevB.43.3856}}.
 \newline\urlprefix\url{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.43.3856}
 
+\bibitem{Gutierrez2002}
+G.~Guti{\'{e}}rrez, B.~Johansson,
+  \href{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}{{Molecular
+  dynamics study of structural properties of amorphous Al2O3}}, Physical Review
+  B 65~(104202) (2002) 1--9.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevB.65.104202}
+  {\path{doi:10.1103/PhysRevB.65.104202}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.65.104202}
+
+\bibitem{Cliffe2017}
+M.~J. Cliffe, A.~P. Bart{\'{o}}k, R.~N. Kerber, C.~P. Grey, G.~Cs{\'{a}}nyi,
+  A.~L. Goodwin, {Structural simplicity as a restraint on the structure of
+  amorphous silicon}, Physical Review B 95~(22) (2017) 1--6.
+\newblock \href {http://arxiv.org/abs/1609.00668} {\path{arXiv:1609.00668}},
+  \href {http://dx.doi.org/10.1103/PhysRevB.95.224108}
+  {\path{doi:10.1103/PhysRevB.95.224108}}.
+
+\bibitem{White2014}
+C.~E. White, N.~J. Henson, L.~L. Daemen, M.~Hartl, K.~Page,
+  \href{https://pubs.acs.org/sharingguidelines}{{Uncovering the True Atomic
+  Structure of Disordered Materials: The Structure of a Hydrated Amorphous
+  Magnesium Carbonate (MgCO 3 {\textperiodcentered}3D 2 O)}}\href
+  {http://dx.doi.org/10.1021/cm500470g} {\path{doi:10.1021/cm500470g}}.
+\newline\urlprefix\url{https://pubs.acs.org/sharingguidelines}
+
 \bibitem{Zhang2015}
 Y.-J. Zhang, J.-H. Lan, C.-Z. Wang, Q.-Y. Wu, T.~Bo, Z.-F. Chai, W.-Q. Shi,
   \href{http://pubs.acs.org/doi/10.1021/jp510219a}{{Theoretical Investigation
@@ -72,6 +88,13 @@ B.~Dorado, M.~Freyss, B.~Amadon, M.~Bertolus, G.~Jomard, P.~Garcia, {Advances
   in first-principles modelling of point defects in UO2: f electron
   correlations and the issue of local energy minima This}, Journal of Physics:
   Condensed Matter 25~(333201) (2013) 1--13.
+
+\bibitem{Car1988}
+R.~Car, M.~Parrinello, {Structural, dymanical, and electronic properties of
+  amorphous silicon: An ab initio molecular-dynamics study}, Physical Review
+  Letters 60~(3) (1988) 204--207.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevLett.60.204}
+  {\path{doi:10.1103/PhysRevLett.60.204}}.
 
 \bibitem{Raty2015}
 J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,

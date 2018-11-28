@@ -24,21 +24,18 @@
 	\address[boise]{Boise State University}
 	
 	\begin{abstract}
-\begin{itemize}
-	\item DOS
-	\item structural modeling
-\end{itemize}
+
+We examine four computational methods applicable to amorphous materials: Density Functional Theory (DFT), \textit{Ab initio} Molecular Dynamics (AIMD), Molecular Dynamics (MD), and Monte Carlo (MC). Each method has been used to better understand amorphous materials including amorphous perovskites, amorphous alumina, amorphous Si, and amorphous phase change materials. The lower length scale methods can calculate electronic properties, such as density of states, and structural properties of a small unit cell. The higher length scales can treat hundreds and thousands of atoms and show evolution with time. Selection of a computional method requires a clear definition of the system of interest and properties of interest. Computational methods exhibit a negative correlation between accuracy and speed. Selection of energy functionals and pair-potentials requires a literature review to verify such a method is appropriate for the desired system. 
+
 	\end{abstract}
 	
 	
 \end{frontmatter}
-
+\tableofcontents
 \section{Introduction}
-\subsection{Why model amorphous semiconductors?}
-
-
-\subsection{How can we model amorphous semiconductors?}
-Computational modeling spans length scales from the order of meters, that we experience, to the order of Angstroms, that atoms experience. Due to this vast range of length scales, no one method can address all properties. Following, computational methods are broken down into four main categories (Figure 1): First principles or \textit{ab initio}, molecular dynamics (MD), mesoscale methods such as Monte Carlo (MC), and continuum methods such as finite element analysis (FEA)\cite{Lee2012}.
+Computational modeling can greatly assist experimental studies of materials. When starting from experiment, modeling can help determine the mechanism of a process or the structure of a material. When starting from computation, modeling can screen an array of materials to predict which will yield the best properties.
+\par
+Computational modeling spans length scales from the order of meters, that we experience, to the order of \aa ngstr\"oms, that atoms experience. Due to this vast range of length scales, no one method can address all properties. Following, computational methods are broken down into four main categories (\textbf{Fig. 1}): First principles or \textit{ab initio}, molecular dynamics (MD), mesoscale methods such as Monte Carlo (MC), and continuum methods such as finite element analysis (FEA)\cite{Lee2012}. This review focuses on the lower three: first principles, MD, and MC, which can be used to find the structure of amorphous materials. Density of states is an inherently electronic calculation, and as such can only be calculated from first principles. We will additionally study \textit{Ab initio} Molecular Dynamics, a combination of the lower two length scales, which we will see is particularly useful for amorphous materials. For each method, we discuss the theory and an example of its application for amorphous materials. Our examples will include determining the structural and electronic origin of photoluminescence in amorphous perovskites, determining the basic units of amorphous alumina, finding the structure of a-Si using diffraction results, and probing the mechanism of aging in phase change materials. Lastly, we will discuss the benefits and drawbacks of each method, how to select a method,  and what considerations must be taken into  account in a computational study.
 \begin{figure}[H]
 	\includegraphics[width=0.5\textwidth]{overview}
 	\centering
@@ -48,6 +45,7 @@ Computational modeling spans length scales from the order of meters, that we exp
 
 
 \section{First Principles}
+\subsection{Formulation of Density Functional Theory}
 First principles, or \emph{ab initio}, modeling is derived solely from quantum mechanics and considers the nuclei and atoms of a system. The term "first principles" refers to the models ability to solve for electronic and structural properties knowing only the constituent atomic species or, rather, no experimental input. The method is based on the Schr\"odinger's equation. However, this equation can only be analytically solved for hydrogen. To extend its applicability, several assumptions and approximations must be made to yield density functional theory (DFT).
 \par 
 In short, DFT does not consider gravity, relativity, or excited states \cite{Lee2012}. The nuclei and electrons are considered separately, known as the Born-Oppenheimer approximation, as nuclei are 10,000 times more massive than electrons, in the case of semiconductors, and the electrons will instantaneously move with them.  These simplifications yield the following Hamiltonian:
@@ -59,7 +57,7 @@ where $N$ is the number of nuclei, $n$ is the number of electrons, $Z_{I}$ is th
 \begin{equation}
 	E = \sum_{i,j} \int \Psi_{i}^{*} (\vec{r}) \Bigg(-\frac{1}{2}\sum_{i}^{n}\nabla_{i}^{2}-\sum_{I}^{N}\sum_{i}^{n}\frac{Z_{I}}{|\vec{r}_{Ii}|}+\sum_{i\neq j}^{n}\frac{1}{|\vec{r}_{ij}|}\Bigg)\Psi_{i}(\vec{r})d\vec{r}
 \end{equation}
- The Kohn-Sham approach is applied to turn the \emph{n}-electron system into a fictitious system of one-electrons. Solving the Kohn-Sham Hamiltonian yield the Kohn-Sham orbitals $\phi_{i}(\vec{r})$:
+ The Hartree-Fock method introduces the Slater determinant to include antisymmetry. The Kohn-Sham approach is applied to turn the \emph{n}-electron system into a fictitious system of one-electrons. Solving the Kohn-Sham Hamiltonian yield the Kohn-Sham orbitals $\phi_{i}(\vec{r})$:
  
  \begin{equation}
  \bigg[-\frac{1}{2}\nabla^{2}+U_{eff}(\vec{r})\bigg]\phi_{i}(\vec{r}) = \epsilon_{i}\phi_{i}(\vec{r}) \Rightarrow \hat{H_{KS}}\phi_{i} = \epsilon_{i}\phi_{i}(\vec{r}) \qquad ,
@@ -69,12 +67,8 @@ where $\epsilon_{i}$ are the Kohn-Sham eigenvalues. The electron density is then
 \begin{equation}
 \rho (r) = \sum_{i}|\phi _{i}(r)|^{2} \qquad.
 \end{equation}
-The third term of the Hamiltonian, the potential energy between electrons, is split into Hartree energy and exchange-correlation energy. The Hartree energy is  the potential felt on each electron by a homogeneous electron gas of all the other electrons. Exchange energy describes the interaction of same spin electrons and correlation energy describes the interaction of different spin electrons.
-\begin{figure}[h]
-	\includegraphics[width=0.6\textwidth]{scf}
-	\centering
-	\caption{Self-consistent framework (SFC) loop used in DFT \cite{Lee2012}.} 
-\end{figure}
+The third term of the Hamiltonian, the potential energy between electrons, is split into Hartree energy and exchange-correlation energy. The Hartree energy is  the potential felt on each electron by a homogeneous electron gas of all the other electrons. Exchange energy describes the interaction of same spin electrons and correlation energy describes the interaction of different spin electrons. Though exchange-correlation energy is small in magnitude compared to the other energetic terms, it is directly linked to the accuracy of the method, as shown in Fig. YYY. 
+
 
 \begin{figure}[H]
 	\centering
@@ -88,7 +82,18 @@ The third term of the Hamiltonian, the potential energy between electrons, is sp
 	\end{minipage}
 	\caption{Energy schematic \cite{Lee2012} (left) and Jacob's ladder depiction \cite{Sholl2009} of various functionals.}
 \end{figure}
-Meta-GGA, also referred to as hybrid functionals, combine Hartree Fock with DFT functionals. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
+
+Three main categories of exchange-correlation functionals are the Local Density Approximation (LDA), Generalized Gradient Approximation (GGA), and hybrid functionals. Hybrid functionals, also referred to as meta-GGA , combine Hartree Fock with DFT functionals. Perdew, of PBE - a revision to GGA \cite{Perdew1996}, introduced the analogy of the Jacob's ladder in Fig. YYY. Going up the ladder represents increasing accuracy when compared with experiment, but it is done at computational cost. Any functional at the third rung or above is at least ten times as expensive as GGA \cite{Lee2012}. Though the Jacob's ladder is presented as a linear progression between functionals, this is a large simplification and the accuracy of a functional is often system-dependent. Another important consideration when selecting a functional is whether it is nonempirical - based on constraints of the Kohn-Sham functional - or empirical - parameterized by experiment \cite{Sholl2009}. The B3LYP functional, for example, is an empirical potential fitted to atomization energies, ionization potentials, and other experimental values \cite{Lee2012}. It excels in describing molecular systems, van der Waals interactions, and rapidly fluctuating electron densities. However, this method is not always well suited for metals and semiconductors \cite{Paier2007}.
+\par 
+
+DFT runs using an iterative self-consistent framework shown in Fig. YYY. First, an electron density is created using the superposition of the pseudopotentials (mathematically simplified functions resulting from freezing core electrons with the nucleus) of each atom. Second, calculate the terms of the Kohn-Sham Hamiltonian and use the electron density to solve the exchange-correlation functional.  Third, solve the Kohn-Sham equations through direct diagonalization to obtain the Kohn-Sham orbitals. Fourth, use the new orbitals to solve for the electron density. Repeat this process until the difference in energy between calculations reaches a predetermined stopping criteria. Once the energy converges, update the nuclei positions and repeat the iterative process. The method continues until energy differences between subsequent nuclei positions reaches the stopping criteria. 
+
+\begin{figure}[h]
+	\includegraphics[width=0.6\textwidth]{scf}
+	\centering
+	\caption{Self-consistent framework (SFC) loop used in DFT \cite{Lee2012}.} 
+\end{figure}
+
 
 \subsection{Photoluminescence in amorphous perovskites}
 \begin{figure}[h]
@@ -134,7 +139,7 @@ Additionally, the B3LYP is a partially empirical functional \cite{Paier2007}. Du
 
 
 \section{Molecular Dynamics}
-
+\subsection{Formulation of Molecular Dynamics}
 Molecular Dynamics (MD) is a classical method built off of
 
 \begin{equation}
@@ -192,7 +197,7 @@ When compared with experimental structure factor, the results are in general agr
 
 
 \section{Monte Carlo}
-Reverse Monte Carlo (RMC) algorithm can be used to find atomicstic models from experimental data, commonly diffraction results. This large length scale method can produce unit cells on the order of thousands of atoms. The simulation begins with a unit cell with the desired atomic species and undergoes an iterative process of random atomic movements \cite{White2014}. If the movement creates a structure that better matches experiment, the movement is accepted. If the movement creates a structure yielding results less like diffraction data, the movement is rejected. Using this method in combination with DFT can help over come the energetic barries to atomic reconfiguration. The authors note that creating stochastic models and relaxing with DFT can create unphysical structures. To avoid this problem, White et al. \cite{White2014} use an RMC algorithm that is restrained to favor simpler solutions.
+Reverse Monte Carlo (RMC) algorithm can be used to find atomistic models from experimental data, commonly diffraction results. This large length scale method can produce unit cells on the order of thousands of atoms. The simulation begins with a unit cell with the desired atomic species and undergoes an iterative process of random atomic movements \cite{Cliffe2017}. If the movement creates a structure that better matches experiment, the movement is accepted. If the movement creates a structure yielding results less like diffraction data, the movement is rejected. Using this method in combination with DFT can help over come the energetic barries to atomic reconfiguration. Cliffe et al. \cite{Cliffe2017} noted that creating stochastic models and relaxing with DFT can create unphysical structures. To avoid this problem, the authors used an RMC algorithm that is restrained to favor simpler solutions.
 \par 
 The authors began with a pair distribution function (PDF) generated from a  successful molecular dynamics model of a-Si referred to as WWW. Next, they created a random 512 atom unit cell and optimized the structure following
 
@@ -218,7 +223,7 @@ multiplied by the previous PDF weight and divided by the previous self-similarit
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{white2}
 	\centering
-	\caption{Electronic density of states calculated from the (a) tight-binding model and the (b) MBJ meta-GGA functional for a-Si by White et al. \cite{White2014}. The density of states for unrestrained RMC is shown for comparison.}
+	\caption{Electronic density of states calculated from the (a) tight-binding model and the (b) MBJ meta-GGA functional for a-Si by Cliffe et al. \cite{Cliffe2017}. The density of states for unrestrained RMC is shown for comparison.}
 \end{figure}
 
 \par 
@@ -242,9 +247,9 @@ After obtaining the a-Si structure from L-constrained RMC, DFT calculations usin
 
 
 \section{\emph{Ab intio} Molecular Dynamics}
-\emph{Ab initio} Molecular Dynamics (AIMD) refers to any calculation that advances atoms along classical trajectories based on forces calculated from DFT\cite{Sholl2009}.
-\par 
-AIMD is an incredibly powerful method capable of adding time to a DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in Figure YYY. Instead of performing AIMD as a stepwise process in which calculating the atomic trajectories and the electronic ground state are separate, Car and Parinello formulated the two to run simultaneously. Their extended Lagrangian introduces the electronic degrees of freedom as fictitious dynamical variables:
+\subsection{Formulation of \emph{Ab initio} Molecular Dynamics}
+\emph{Ab initio} Molecular Dynamics (AIMD) greatly extends the capabilities of both methods by advancing atoms along classical trajectories based on forces calculated from DFT\cite{Sholl2009}.
+This is an incredibly powerful method that adds time treatment to DFT simulation while still allowing for \emph{ab initio} calculation of electronic properties. Furthermore, AIMD can circumvent the problem of metastable states, as shown for DFT+U \cite{Zhang2015}. This can be better conceptualized with the schematic of Car-Parrinello MD in Figure YYY. Instead of performing AIMD as a stepwise process in which calculating the atomic trajectories and the electronic ground state are separate, Car and Parinello formulated the two to run simultaneously. Their extended Lagrangian introduces the electronic degrees of freedom as fictitious dynamical variables:
 \begin{equation}
 L =\frac{1}{2}\sum_{i=1}^{3N}m_{i}v^{2}_{i}-U(r_{1}, \cdots, r_{3N})+\frac{1}{2}\sum_{j}2\mu \int d\vec{r}|\dot{\psi}(\vec{r})|^{2}+L_{ortho}
 \end{equation}
@@ -256,7 +261,7 @@ The third term introduces fictitious mass, $\mu$, and the final term restrains t
 \end{figure}
 
 \par
-Shortly after the formulation of Car-Parrinello MD, Car and Parrinello realized the utility of the method for 
+Shortly after the formulation of Car-Parrinello MD, Car and Parrinello realized the utility of the method for amorphous materials \cite{Car1988}. They discussed the dependence of MD and MC on interatomic potentials. As potentials are fitted to experimental data, the validity of the model in other applications cannot be assessed. Furthermore, it is difficult to determine the electronic properties and atomic dynamics that give rise todevice performance. In contrast, AIMD allows for calculation of the potential directly from first principles.
 
 \subsection{AIMD for Phase Change Memory}
 Raty et al. \cite{Raty2015} used Ab Initio Molecular Dynamics to understand the structural changes associated with aging in GeTe, and the effects those changes have on performance. Inherently out of equilibrium, amorphous materials evolve with time to a lower energetic state. In the case of phase change materials, this evolution leads to higher electrical resistivity that undermines its usability in multilevel memory devices. Using AIMD, we can watch the structure evolve, but though we discussed the addition of time to DFT above, this time is still on the order of picoseconds, leaving real-time aging out of the quesion. Raty et al. have sidestepped this problem by creating an arrangement of structures with varying local motifs. 
@@ -288,39 +293,23 @@ Raty et al. additionally calculated the changes in the electronic and optical ba
 
 
 \section{Discussion}
+DFT allows for the calculation of total energy, band structure, density of states, bulk modulus, magnetic moment, among other properties. While the method can be highly accurate, it sometimes runs into the issue of reaching metastable states \cite{Dorado2013}. If the achieved structure is not the true ground state, it may inaccurately represent the structure and the properties calculated from it. Additionally, due to computational expense DFT can only be reasonable performed for systems of less that 100 atoms.
+\par 
+MD can treat hundreds of atoms, as well as include the effects of time, temperature, and pressure. This is allows for studies including the temporal evolution of a system and heat treatment. However, it relies on the selection of a pair-potential. Even state-of-the-art pair-potentials can struggle to describe anisotropic systems \cite{Hohl1991}. Additionally, due to their empirical nature, a potential may not always describe properties other than those it was designed for \cite{Cliffe2017, Car1988}. For instance, if an interatomic potential is fitted to structural properties, it will not necessarily reproduce magnetic properties. Furthermore, it may not be able to treat new materials that have not been studied experimentally.
+\par 
+MC can treat thousands of atoms, but like Molecular Dynamics is hindered by the need for interatomic potentials \cite{Car1988}. Reverse Monte Carlo, on the other hand, can identify thousands of atom unit cells from experimental data. Again, this requires previously conducted experiments and thus cannot be used for screening.
+\par 
+AIMD circumvents the empirical interatomic potential problem by calculating potentials on-the-fly with DFT.  This both adds the time dimension to DFT and allows for the calculation of electronic properties from MD. Still, it cannot feasibly model as many atoms and as large time scales as MD and above.
+\par 
+Selecting a method requires a clear definition of the system and project goals. To determine electronic properties, one should use DFT or AIMD. To determine large scale properties or even temporal evolution, one should use MD or MC. Consider how large of a unit cell is needed for the study, what time scale should it run on, and what takes priority: time of study or accuracy? Is the goal to screen for the optimal material or to understand an observed property? In the case of DFT and AIMD, carefully select your exchange-correlation functional. If your priority is getting results quickly, GGA will likely suffice. If your priority is a very accurate calculation, try a hybrid functional and verify in the literature that this functional can describe your system or systems like it. In the case of MD and MC, select a pair-potential that is accurate for your system and balance your needs of speed of calculation vs. accuracy. Regardless of method, a strong understanding of the formulation will aid the researcher in identifying in what cases method fails and in what cases the method can answer desired questions.
+
+
 
 
 \section{Conclusion}
-know when your methods fail
-\begin{itemize}
-	\item MD iff
-	\begin{itemize}
-		\item isotropic
-		\item potential reproduces desired properties
-	\end{itemize}
-\end{itemize}
+We have examined four computational methods applicable to amorphous materials: DFT, AIMD, MD, and MC.
 
 
-
-
-\pagebreak
-
-\section*{Notes}
-
-\begin{itemize}
-	\item Kohn Sham: A \emph{system} of one-electrons
-	\item Hartree: a \emph{potential} of how each electrons feels the electron gas
-	\item Hartree Fock: how we describe the wave functions
-\end{itemize}
-\subsection{AIMD}
-\underline{Hohl 1991}\cite{Hohl1991} - Liquid and amorphous Se \par \vs
-\textbf{Computational comments}
-\begin{itemize}
-	\item many structural models have been proposed and often conflict
-	\item models based solely on small differences are insufficient to explain all measured features
-	\item even carefully constructed empirical potentials have difficulty in highly anisotropic covalent systems such as group-IVA elements.
-	\item AIMD avoids parameterization of interatomic forces common in MD
-\end{itemize}
 
 
 \section*{References}
