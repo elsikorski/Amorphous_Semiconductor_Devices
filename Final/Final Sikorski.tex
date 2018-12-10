@@ -49,10 +49,13 @@
 \item Discuss why space charge limited conduction could occur in a device comprised of an
 a-semiconductor. Use energy band diagrams in your discussion. 
 \par 
+\vs 
+In a-semiconductors, the states are largely localized or traps. If there are, for instance, only 4 states for electrons to move from the metal into the a-semiconductor, additional electrons moving from the metal to the a-semiconductor must wait for the first 4 electrons to vacate the traps.
+
 \fullline
 
 %2
-\item The UV-Vis transmission data is shwon for several a-semiconductor films in \textbf{Fig. 1}. Based on the optical data, what can you say about the effect of the particular dopant on the sample? Which sample would you expect to have the most defects? Describe why you support your conclusions.
+\item The UV-Vis transmission data is shwon for several a-semiconductor films in \textbf{Fig. 2}. Based on the optical data, what can you say about the effect of the particular dopant on the sample? Which sample would you expect to have the most defects? Describe why you support your conclusions.
 
 \begin{figure}[H]
 	\centering
@@ -61,15 +64,35 @@ a-semiconductor. Use energy band diagrams in your discussion.
 \end{figure}
 \par 
 
-The approximate optical bandgap is shown by taking the tangent of the linear portions of the optical data and finding the intercept at 0\% transmission. The original Ge$_{40}$Se$_{60}$ sample and those doped with A, C, and D give optical bandgaps around 300 nm or $\approx$ 4 eV ($\lambda=hc/E$), while Ge$_{40}$Se$_{60}$ + B has an optical bandgap of approximately 250 nm or $\approx$ 5 eV. While electrical conduction ideally requires transitions from the valence extended states to the conduction extended states, the optical band gap can include shorter transitions from the localized states in the gap to the conduction extended states. As seen in Raty et al.'s study of aging in phase change materials \cite{Raty2015}, a decrease in localized defect states leads to band gap widening. Of the four dopant samples, Ge$_{40}$Se$_{60}$ + D leads to the smallest optical band gap (<4 eV) and thus likely as the most defects.
+The approximate optical bandgap is shown by taking the tangent of the linear portions of the optical data and finding the intercept at 0\% transmission. The original Ge$_{40}$Se$_{60}$ sample and those doped with A, C, and D give optical bandgaps around 300 nm or $\approx$ 4 eV ($\lambda=hc/E$), while Ge$_{40}$Se$_{60}$ + B has an optical bandgap of approximately 250 nm or $\approx$ 5 eV. While electrical conduction ideally requires transitions from the valence extended states to the conduction extended states, the optical band gap can include shorter transitions from the localized states in the gap to the conduction extended states. As seen in Raty et al.'s study of aging in phase change materials \cite{Raty2015}, a decrease in localized defect states leads to band gap widening. Conversely, of the four dopant samples, Ge$_{40}$Se$_{60}$ + D leads to the smallest optical band gap (<4 eV) and thus likely has the most defects.
 
 \fullline
 
 %3
 \item Compare and contrast the derivation of the density of states for a crystalline
 semiconductor with that of an amorphous semiconductor.
-\par 
+\par \vs 
+I
+In 3D, the density of states $D(E)$, regardless of a crystalline or amorphous system, can be described with 
+\begin{equation}
+D(E)=\frac{V}{2\pi^2}\bigg(\frac{2m}{\hbar ^2}\bigg)^{3/2}E^{1/2} \qquad .
+\end{equation}
+This requires a mathematical description of the wavefunction in order to calculate the energy.
+In crystalline systems, the periodic electronic states can be described with Bloch waves \cite{Lee2012}:
+
+\begin{equation}
+\Psi_{k}(\vec{r})=u_{k}(\vec{r})\exp(i\vec{k}\cdot\vec{r}) \qquad ,
+\end{equation}
+where $u_{k}(\vec{r})$ is a periodic function and the exponential is a plane wave. However, a-solids do not have long range order and the electronic states must be described differently. Instead, electronic states in a-semiconductors can be treated with nonperiodic equations such as Green's functions, capable of describing concentrated charge \cite{Stover}.
+
+
+
+
+
 \fullline
+
+
+
 
 %4 
 \item Describe conduction in the extended states, band tail (mobility edge) states, and in the

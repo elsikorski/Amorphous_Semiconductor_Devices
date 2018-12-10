@@ -13,4 +13,15 @@ J.~Y. Raty, W.~Zhang, J.~Luckas, C.~Chen, R.~Mazzarello, C.~Bichara, M.~Wuttig,
   {\path{doi:10.1038/ncomms8467}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1038/ncomms8467}
 
+\bibitem{Lee2012}
+J.~G. Lee,
+  \href{https://www.crcpress.com/Computational-Materials-Science-An-Introduction/Lee/p/book/9781439836170}{{Computational
+  materials science : an introduction}}, CRC Press, 2012.
+\newline\urlprefix\url{https://www.crcpress.com/Computational-Materials-Science-An-Introduction/Lee/p/book/9781439836170}
+
+\bibitem{Stover}
+C.~Stover, \href{http://mathworld.wolfram.com/GreensFunction.html}{{Green's
+  Function}}.
+\newline\urlprefix\url{http://mathworld.wolfram.com/GreensFunction.html}
+
 \end{thebibliography}
