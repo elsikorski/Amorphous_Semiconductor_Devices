@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Homework 4 Sikorski.aux
+The style file: elsarticle-num.bst
+Database file #1: homework4.bib
+Warning--empty institution in Kastner
+Warning--empty year in Kastner
+Warning--empty journal in Yu2001
+You've used 4 entries,
+            2937 wiz_defined-function locations,
+            701 strings with 6040 characters,
+and the built_in function-call counts, 1256 in all, are:
+= -- 118
+> -- 43
+< -- 0
++ -- 17
+- -- 13
+* -- 111
+:= -- 196
+add.period$ -- 5
+call.type$ -- 4
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 38
+empty$ -- 128
+format.name$ -- 17
+if$ -- 303
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 25
+num.names$ -- 4
+pop$ -- 28
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 61
+stack$ -- 0
+substring$ -- 56
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 8
+width$ -- 5
+write$ -- 43
+(There were 3 warnings)

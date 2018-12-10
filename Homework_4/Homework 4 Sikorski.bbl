@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Chen2018}
+N.-K. Chen, X.-B. Li, X.-P. Wang, W.~Q. Tian, S.~Zhang, H.-B. Sun,
+  \href{https://www.sciencedirect.com/science/article/pii/S1359645417308625}{{Strong
+  electron-polarized atom chain in amorphous phase-change memory GeSbTe
+  alloy}}, Acta Materialia 143 (2018) 102--106.
+\newblock \href {http://dx.doi.org/10.1016/J.ACTAMAT.2017.10.013}
+  {\path{doi:10.1016/J.ACTAMAT.2017.10.013}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1359645417308625}
+
+\bibitem{Street1975}
+R.~A. Street, N.~F. Mott,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}{{States
+  in the Gap in Glassy Semiconductors}}, Physical Review Letters 35~(19) (1975)
+  1293--1295.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.35.1293}
+
+\bibitem{Kastner}
+M.~Kastner, D.~Adler, H.~Fritzsche,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.37.1504}{{Valence-Alternation
+  Model for Localized Gap States in Lone-Pair Semiconductors*}}, Tech. rep.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.37.1504}
+
+\bibitem{Yu2001}
+Z.~G. Yu, X.~Song,
+  \href{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.86.6018}{{Variable
+  Range Hopping and Electrical Conductivity along the DNA Double Helix}}\href
+  {http://dx.doi.org/10.1103/PhysRevLett.86.6018}
+  {\path{doi:10.1103/PhysRevLett.86.6018}}.
+\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.86.6018}
+
+\end{thebibliography}
